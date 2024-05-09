@@ -1,0 +1,14 @@
+<launch>
+    <!-- Node for publishing point clouds -->
+    <node name="pointcloud_publisher" pkg="VLM_grasper" type="pointcloud_publisher.py" output="screen">
+        <param name="input_directory" value="$(find VLM_grasper)/src/VLM_grasper/data/point_clouds" />
+    </node>
+
+    <!-- Node for performing edge grasp detection -->
+    <node name="edge_grasp_node" pkg="VLM_grasper" type="edge_grasp_node.py" output="screen">
+    </node>
+
+    <!-- Node for visualizing grasps -->
+    <node name="grasp_visualizer" pkg="VLM_grasper" type="grasp_visualizer.py" output="screen">
+    </node>
+</launch>

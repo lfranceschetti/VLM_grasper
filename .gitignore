@@ -1,0 +1,8 @@
+# Ignore all bag files in the project
+*.bag
+
+cuda-repo-wsl-ubuntu-12-1-local_12.1.0-1_amd64.deb
+
+vn_edge_pretrained_para/
+
+data_robot/
