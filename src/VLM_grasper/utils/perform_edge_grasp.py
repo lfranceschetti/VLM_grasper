@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/home/lucfra/miniconda3/envs/ros_env/bin/python
 import numpy as np
 import open3d as o3d
 import torch
@@ -10,13 +10,14 @@ from VLM_grasper.simulator.utility import FarthestSamplerTorch, get_gripper_poin
 import torch.nn.functional as F
 import rospy
 import os
+import sys
 
 SAMPLE_NUMBER = 64
 
 
 
 def perform_edge_grasp(pc, add_noise=False, plotting=False):
-
+    
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = VNGrasper(device=1, root_dir='/home/lucfra/semester-project/catkin_ws/src/VLM_grasper/src/VLM_grasper/vn_edge_pretrained_para', load=105)
@@ -39,6 +40,7 @@ def perform_edge_grasp(pc, add_noise=False, plotting=False):
     # COMMENTED OUT FOR NOW
     # pc, ind = pc.remove_statistical_outlier(nb_neighbors=30, std_ratio=1.0)
     # pc, ind = pc.remove_radius_outlier(nb_points=30, radius=0.03)
+    #
     pc.estimate_normals(search_param=o3d.geometry.KDTreeSearchParamHybrid(radius=0.04, max_nn=30))
 
     if pc.has_normals():
@@ -94,12 +96,24 @@ def perform_edge_grasp(pc, add_noise=False, plotting=False):
     valid_edge_approach = -valid_edge_approach
     up_dot_mask = torch.einsum('ik,k->i', valid_edge_approach, torch.tensor([0., 0., 1.]).to(device))
     relative_norm = torch.linalg.norm(relative_pos, dim=-1)
-
     depth_proj = -torch.sum(relative_pos * valid_edge_approach, dim=-1)
-    geometry_mask = torch.logical_and(up_dot_mask > -0.1, relative_norm > 0.003)
-    geometry_mask = torch.logical_and(relative_norm<0.038,geometry_mask)
-    depth_proj_mask = torch.logical_and(depth_proj > -0.000, depth_proj < 0.04)
-    geometry_mask = torch.logical_and(geometry_mask, depth_proj_mask)
+
+    # Define the condition masks
+    angle_condition = up_dot_mask > -0.1
+    distance_condition = torch.logical_and(relative_norm > 0.003, relative_norm < 0.038)
+    depth_condition = torch.logical_and(depth_proj > -0.000, depth_proj < 0.04)
+
+    # Combine conditions into the geometry mask
+    geometry_mask = torch.logical_and(angle_condition, distance_condition)
+    geometry_mask = torch.logical_and(geometry_mask, depth_condition)
+
+    # Log the results of each condition
+    rospy.loginfo(f"Total points: {len(up_dot_mask)}")
+    rospy.loginfo(f"Angle condition passed: {angle_condition.sum().item()}/{len(angle_condition)}")
+    rospy.loginfo(f"Distance condition passed: {distance_condition.sum().item()}/{len(distance_condition)}")
+    rospy.loginfo(f"Depth condition passed: {depth_condition.sum().item()}/{len(depth_condition)}")
+    rospy.loginfo(f"Overall geometry mask passed: {geometry_mask.sum().item()}/{len(geometry_mask)}")
+
 
     # draw_grasps2(geometry_mask, depth_proj, valid_edge_approach, des_normals, sample_pos, pos, sample, des=None, scores=None)
     pose_candidates = orthognal_grasps(geometry_mask, depth_proj, valid_edge_approach, des_normals,
@@ -126,8 +140,6 @@ def perform_edge_grasp(pc, add_noise=False, plotting=False):
 
         data = data.to(device)
         grasps = model.model.act(data)
-
-        print('grasps', grasps)
 
         return grasps
     else:

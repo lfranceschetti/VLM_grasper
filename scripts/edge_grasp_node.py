@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/home/lucfra/miniconda3/envs/ros_env/bin/python
 import rospy
 from sensor_msgs.msg import PointCloud2
 import sensor_msgs.point_cloud2 as pc2
@@ -30,10 +30,13 @@ def callback(data, args):
     pub = args[0]
 
     rospy.loginfo(f"Received point cloud data from frame: {data.header.frame_id}")
+
+
     # Convert ROS PointCloud2 to Open3D PointCloud
     gen = pc2.read_points(data, skip_nans=True, field_names=("x", "y", "z"))
     points = np.array(list(gen))
     pc = o3d.geometry.PointCloud()
+    
     pc.points = o3d.utility.Vector3dVector(points)
 
     # Process the point cloud and predict grasps
@@ -50,7 +53,9 @@ def callback(data, args):
 
     # Ensure each step is explicitly copied if necessary
     score = score.cpu().detach().numpy()
-    sorted_indices = np.argsort(-score)  # More straightforward, avoids reversing
+    #Take the indices of the 10 highest scores
+    sorted_indices = np.argsort(score)[::-1]
+  
     best_indices = sorted_indices[:10]
     score = score[best_indices].copy()
     sample_pos = sample_pos.cpu().numpy()[best_indices].copy()  # Force a copy here
