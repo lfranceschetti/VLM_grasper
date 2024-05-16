@@ -7,7 +7,7 @@ import open3d as o3d
 from VLM_grasper.utils.perform_edge_grasp import perform_edge_grasp
 
 
-from VLM_grasper.msg import PointCloudWithGrasps
+from VLM_grasper.msg import PointCloudWithGrasps, PointCloudWithCamera
 from VLM_grasper.msg import Grasp
 from geometry_msgs.msg import Vector3
 
@@ -31,9 +31,8 @@ def callback(data, args):
 
     rospy.loginfo(f"Received point cloud data from frame: {data.header.frame_id}")
 
-
     # Convert ROS PointCloud2 to Open3D PointCloud
-    gen = pc2.read_points(data, skip_nans=True, field_names=("x", "y", "z"))
+    gen = pc2.read_points(data.point_cloud, skip_nans=True, field_names=("x", "y", "z"))
     points = np.array(list(gen))
     pc = o3d.geometry.PointCloud()
     
@@ -71,8 +70,9 @@ def callback(data, args):
     combined_msg = PointCloudWithGrasps()
     combined_msg.header.stamp = rospy.Time.now()
     combined_msg.header.frame_id = data.header.frame_id
-    combined_msg.point_cloud = data
+    combined_msg.point_cloud = data.point_cloud
     combined_msg.grasps = grasps_msg
+    combined_msg.camera = data.camera
 
     pub.publish(combined_msg)
 
@@ -80,7 +80,7 @@ def main():
     rospy.init_node('edge_grasp_node')
     rospy.loginfo("Edge grasp node started")
     pub = rospy.Publisher('/point_cloud_with_grasps', PointCloudWithGrasps, queue_size=10)
-    rospy.Subscriber("/input_point_cloud", PointCloud2, callback, callback_args=(pub,))
+    rospy.Subscriber("/input_point_cloud", PointCloudWithCamera, callback, callback_args=(pub,))
     rospy.spin()
 
 if __name__ == '__main__':

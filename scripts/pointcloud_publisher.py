@@ -1,7 +1,8 @@
 #!/home/lucfra/miniconda3/envs/ros_env/bin/python
 import rospy
 import open3d as o3d
-from sensor_msgs.msg import PointCloud2
+from sensor_msgs.msg import PointCloud2, CameraInfo
+from geometry_msgs.msg import Transform as Ts
 import sensor_msgs.point_cloud2 as pc2
 import numpy as np
 import os
@@ -10,6 +11,7 @@ from VLM_grasper.simulator.simulation_clutter_bandit import ClutterRemovalSim
 from VLM_grasper.simulator.transform import Rotation, Transform
 from VLM_grasper.simulator.io_smi import *
 from std_msgs.msg import Header
+from VLM_grasper.msg import PointCloudWithCamera, Camera
 
 
 def render_images(sim, n):
@@ -37,20 +39,46 @@ def render_images(sim, n):
 
 
 
+def convert_intrinsic_to_camera_info_msg(intrinsic):
+    msg = CameraInfo()
+    msg.width = intrinsic.width
+    msg.height = intrinsic.height
+    msg.K = [intrinsic.fx, 0.0, intrinsic.cx, 
+             0.0, intrinsic.fy, intrinsic.cy, 
+             0.0, 0.0, 1.0]
+    msg.D = [0, 0, 0, 0, 0]  # Assuming no distortion
+    msg.P = [intrinsic.fx, 0.0, intrinsic.cx, 0.0, 
+             0.0, intrinsic.fy, intrinsic.cy, 0.0,
+             0.0, 0.0, 1.0, 0.0]
+    return msg
 
-def convert_open3d_to_ros(o3d_cloud, frame_id="world"):
-    # Convert Open3D point cloud to a list of 3D points
-    xyz_points = np.asarray(o3d_cloud.points, dtype=np.float32)
-    # Create a ROS PointCloud2 message
-    header = Header(frame_id=frame_id, stamp=rospy.Time.now())
-    ros_cloud = pc2.create_cloud_xyz32(header, xyz_points)
-    return ros_cloud
+def convert_extrinsics_to_transform_msg(extrinsic):
+    msg = Ts()
+
+    # Assuming the extrinsic array is in the format [x, y, z, qx, qy, qz, qw]
+    msg.translation.x = extrinsic[0]
+    msg.translation.y = extrinsic[1]
+    msg.translation.z = extrinsic[2]
+
+    msg.rotation.x = extrinsic[3]
+    msg.rotation.y = extrinsic[4]
+    msg.rotation.z = extrinsic[5]
+    msg.rotation.w = extrinsic[6]
+
+    return msg
+
+
+def get_point_cloud_msg(tsdf, sim):
+    pc = tsdf.get_cloud()
+    bounding_box = o3d.geometry.AxisAlignedBoundingBox(sim.lower, sim.upper)
+    pc = pc.crop(bounding_box)
+    return pc2.create_cloud_xyz32(Header(frame_id="camera_link"), np.asarray(pc.points))
 
 
 
 def publisher_node(use_simulation=True):
     rospy.init_node('pointcloud_publisher')
-    pub = rospy.Publisher('/input_point_cloud', PointCloud2, queue_size=10)
+    pub = rospy.Publisher('/input_point_cloud', PointCloudWithCamera, queue_size=10)
     rate = rospy.Rate(0.05)  # 0.1 Hz = 10 seconds
 
     # Get the path to the package
@@ -67,22 +95,40 @@ def publisher_node(use_simulation=True):
     sim = ClutterRemovalSim("obj", "packed/test", gui=False, rand=True)
 
     while not rospy.is_shutdown():
+        combined_msg = PointCloudWithCamera()
+        header = Header()
+        header.stamp = rospy.Time.now()
+        header.frame_id = "camera_link"  # Adjust as necessary
+        combined_msg.header = header
+        camera_msg = Camera()
+
         if use_simulation:
             sim.reset(1)
             depth_imgs, extrinsics, eye = render_images(sim, 1)
+
+            #Get Camera Intrinsic
+            intrinsic = sim.camera.intrinsic
+            camera_info = convert_intrinsic_to_camera_info_msg(intrinsic)
+            camera_msg.camera_info = camera_info
+
+            #Get Camera Extrinsic
+            if extrinsics.shape[0] > 0:
+                transform_msg = convert_extrinsics_to_transform_msg(extrinsics[0])
+                camera_msg.camera_extrinsic = transform_msg
+
+            combined_msg.camera = camera_msg
+
+
             # reconstrct point cloud using a subset of the images
             tsdf = create_tsdf(sim.size, 180, depth_imgs, sim.camera.intrinsic, extrinsics)
-            pc = tsdf.get_cloud()
+            pc_msg = get_point_cloud_msg(tsdf, sim)
+            combined_msg.point_cloud = pc_msg
 
-            # crop surface and borders from point cloud
-            bounding_box = o3d.geometry.AxisAlignedBoundingBox(sim.lower, sim.upper)
-            # o3d.visualization.draw_geometries([pc])
-            pc = pc.crop(bounding_box)
+            
+            # Add the point cloud to the message
+            pub.publish(combined_msg)
+            
 
-            ros_cloud = convert_open3d_to_ros(pc)
-
-
-            pub.publish(ros_cloud)
         else:
             pub.publish(pc2.create_cloud_xyz32(Header(frame_id="A6"), points_A6))
 

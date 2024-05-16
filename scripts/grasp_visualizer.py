@@ -82,8 +82,6 @@ def grasp_callback(pc_with_grasps, args):
     scores = {0: scores}
     transformation_matrices = {0: transformation_matrices}
 
-    print(transformation_matrices)
-
     # Generate point cloud data
     gen = pc2.read_points(pc_with_grasps.point_cloud, skip_nans=True, field_names=("x", "y", "z"))
     points = np.array(list(gen))
