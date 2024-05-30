@@ -1,3 +1,0 @@
-#Camera.msg
-sensor_msgs/CameraInfo camera_info
-geometry_msgs/Transform camera_extrinsic

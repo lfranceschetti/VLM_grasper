@@ -11,7 +11,7 @@ from VLM_grasper.simulator.simulation_clutter_bandit import ClutterRemovalSim
 from VLM_grasper.simulator.transform import Rotation, Transform
 from VLM_grasper.simulator.io_smi import *
 from std_msgs.msg import Header
-from VLM_grasper.msg import PointCloudWithCamera, Camera
+
 
 
 def render_images(sim, n):
@@ -78,7 +78,7 @@ def get_point_cloud_msg(tsdf, sim):
 
 def publisher_node(use_simulation=True):
     rospy.init_node('pointcloud_publisher')
-    pub = rospy.Publisher('/input_point_cloud', PointCloudWithCamera, queue_size=10)
+    pub = rospy.Publisher('/input_point_cloud', PointCloud2, queue_size=10)
     rate = rospy.Rate(0.05)  # 0.1 Hz = 10 seconds
 
     # Get the path to the package
@@ -95,38 +95,20 @@ def publisher_node(use_simulation=True):
     sim = ClutterRemovalSim("obj", "packed/test", gui=False, rand=True)
 
     while not rospy.is_shutdown():
-        combined_msg = PointCloudWithCamera()
-        header = Header()
-        header.stamp = rospy.Time.now()
-        header.frame_id = "camera_link"  # Adjust as necessary
-        combined_msg.header = header
-        camera_msg = Camera()
+
 
         if use_simulation:
             sim.reset(1)
             depth_imgs, extrinsics, eye = render_images(sim, 1)
 
-            #Get Camera Intrinsic
-            intrinsic = sim.camera.intrinsic
-            camera_info = convert_intrinsic_to_camera_info_msg(intrinsic)
-            camera_msg.camera_info = camera_info
-
-            #Get Camera Extrinsic
-            if extrinsics.shape[0] > 0:
-                transform_msg = convert_extrinsics_to_transform_msg(extrinsics[0])
-                camera_msg.camera_extrinsic = transform_msg
-
-            combined_msg.camera = camera_msg
-
+    
 
             # reconstrct point cloud using a subset of the images
             tsdf = create_tsdf(sim.size, 180, depth_imgs, sim.camera.intrinsic, extrinsics)
             pc_msg = get_point_cloud_msg(tsdf, sim)
-            combined_msg.point_cloud = pc_msg
-
             
             # Add the point cloud to the message
-            pub.publish(combined_msg)
+            pub.publish(pc_msg)
             
 
         else:
