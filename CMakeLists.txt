@@ -51,8 +51,6 @@ catkin_python_setup()
 add_message_files(
   FILES
   PointCloudWithGrasps.msg
-  PointCloudWithCamera.msg
-  Camera.msg
   Grasp.msg
 )
 

@@ -77,7 +77,12 @@ def grasp_callback(pc_with_grasps, args):
 
     scores = np.array(scores)
     transformation_matrices = np.array(transformation_matrices)
-
+    #Save the points, transformation matrices and scores to a file
+    rospack = rospkg.RosPack()
+    package_path = rospack.get_path('VLM_grasper')
+    np.save(os.path.join(package_path, "src", "VLM_grasper", "data", "transformation_matrices.npy"), transformation_matrices)
+    np.save(os.path.join(package_path, "src", "VLM_grasper", "data", "scores.npy"), scores)
+    print("Matrices saved")
 
     scores = {0: scores}
     transformation_matrices = {0: transformation_matrices}
@@ -86,11 +91,13 @@ def grasp_callback(pc_with_grasps, args):
     gen = pc2.read_points(pc_with_grasps.point_cloud, skip_nans=True, field_names=("x", "y", "z"))
     points = np.array(list(gen))
 
+    np.save(os.path.join(package_path, "src", "VLM_grasper", "data", "points.npy"), points)
+    print("Points saved")
+
     # Now call visualize_grasps with the prepared data
     visualize_grasps(points, transformation_matrices, scores, plot_opencv_cam=True, pc_colors=None)
 
-
-
+    
 
 def main():
     rospy.init_node('grasp_visualizer')
