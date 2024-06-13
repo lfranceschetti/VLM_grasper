@@ -1,0 +1,17 @@
+# Ignore all bag files in the project
+*.bag
+
+*.pyc
+
+*.obj
+*.urdf
+
+
+**/checkpoints/
+
+**/data_robot/
+
+
+build/
+
+devel/
