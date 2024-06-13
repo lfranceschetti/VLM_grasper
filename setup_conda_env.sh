@@ -10,5 +10,10 @@ pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -
 conda install libffi==3.3
 conda install cffi=1.14.0
 
+# TO run rosbag scripts
+conda install -c conda-forge pycryptodomex
+conda install -c conda-forge gnupg
+conda install -c conda-forge opencv
+
 
 
