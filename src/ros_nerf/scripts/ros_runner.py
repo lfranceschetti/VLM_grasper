@@ -224,7 +224,7 @@ class RosRunner:
                 self.trainer.pipeline.datamanager.cached_train = self.train_dataset
                 self.trainer.pipeline.datamanager.cached_eval = self.eval_dataset
                 
-                FullImageDatamanager.nsrc/ros_nerf/scripts/__pycache__ src/ros_nerf/scripts/ros_runner.py src/ros_nerf/scripts/ros_saver.pyext_eval_image = VanillaDataManager.next_eval_image
+                FullImageDatamanager.next_eval_image = VanillaDataManager.next_eval_image
                 self.train_dataset.reset_cameras()
 
 
