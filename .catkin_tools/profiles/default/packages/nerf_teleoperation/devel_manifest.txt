@@ -1,0 +1,5 @@
+nerf_teleoperation
+/home/lucfra/catkin_ws/devel/.private/nerf_teleoperation/cmake.lock /home/lucfra/catkin_ws/devel/./cmake.lock
+/home/lucfra/catkin_ws/devel/.private/nerf_teleoperation/lib/pkgconfig/nerf_teleoperation.pc /home/lucfra/catkin_ws/devel/lib/pkgconfig/nerf_teleoperation.pc
+/home/lucfra/catkin_ws/devel/.private/nerf_teleoperation/share/nerf_teleoperation/cmake/nerf_teleoperationConfig-version.cmake /home/lucfra/catkin_ws/devel/share/nerf_teleoperation/cmake/nerf_teleoperationConfig-version.cmake
+/home/lucfra/catkin_ws/devel/.private/nerf_teleoperation/share/nerf_teleoperation/cmake/nerf_teleoperationConfig.cmake /home/lucfra/catkin_ws/devel/share/nerf_teleoperation/cmake/nerf_teleoperationConfig.cmake

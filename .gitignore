@@ -1,17 +1,63 @@
+# General Patterns
+##################
+
+# Ignore Python compiled files
+*.pyc
+__pycache__/
+*.egg-info/
+
+# Ignore VSCode configuration files
+.vscode/
+
+# Ignore environment directories
+venv/
+env/
+
+# Ignore build artifacts
+build/
+devel/
+build_isolated/
+install_isolated/
+dist/
+install/
+
+# Ignore log files
+/logs/
+log/
+
+# Ignore compiled binaries
+bin/
+lib/
+
+
+# ROS Specific Patterns
+#######################
+
 # Ignore all bag files in the project
 *.bag
 
-*.pyc
-
-*.obj
+# Ignore URDF files
 *.urdf
 
+# Ignore ROS-generated files
+build/
+devel/
+log/
+install/
 
+# ROS model checkpoints and data
 **/checkpoints/
-
 **/data_robot/
 
 
-build/
+# NerfStudio Specific Patterns
+##############################
 
-devel/
+# Ignore Nerf models
+outputs/
+
+# Ignore Nerf exports
+exports/
+
+# Ignore Nerf data
+data/

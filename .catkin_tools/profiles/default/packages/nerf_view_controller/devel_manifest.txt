@@ -1,0 +1,6 @@
+nerf_view_controller
+/home/lucfra/catkin_ws/devel/.private/nerf_view_controller/cmake.lock /home/lucfra/catkin_ws/devel/./cmake.lock
+/home/lucfra/catkin_ws/devel/.private/nerf_view_controller/lib/libnerf_view_controller.so /home/lucfra/catkin_ws/devel/lib/libnerf_view_controller.so
+/home/lucfra/catkin_ws/devel/.private/nerf_view_controller/lib/pkgconfig/nerf_view_controller.pc /home/lucfra/catkin_ws/devel/lib/pkgconfig/nerf_view_controller.pc
+/home/lucfra/catkin_ws/devel/.private/nerf_view_controller/share/nerf_view_controller/cmake/nerf_view_controllerConfig.cmake /home/lucfra/catkin_ws/devel/share/nerf_view_controller/cmake/nerf_view_controllerConfig.cmake
+/home/lucfra/catkin_ws/devel/.private/nerf_view_controller/share/nerf_view_controller/cmake/nerf_view_controllerConfig-version.cmake /home/lucfra/catkin_ws/devel/share/nerf_view_controller/cmake/nerf_view_controllerConfig-version.cmake

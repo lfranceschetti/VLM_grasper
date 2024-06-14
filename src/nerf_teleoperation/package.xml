@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>nerf_teleoperation</name>
+  <version>0.0.9</version>
+  <description>The Nerf teleoperation meta package to compile both msg and RViz plugin plus hold launch files</description>
+
+  <maintainer email="mwilder@ethz.ch">Maximum Wilder-Smith</maintainer>
+
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>TODO</license>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>std_msgs</depend>
+  <depend>nerf_teleoperation_msgs</depend>
+  <depend>nerf_view_controller</depend>
+
+</package>

@@ -1,0 +1,15 @@
+---
+# Config for running just the DynaArm with depth data from the realsense
+
+width: 1280
+height: 720
+base_frame: world
+num_images: 51
+num_start: 5
+hz: 2
+blur_threshold: 80
+validation_factor: 8
+cameras:
+- name: cam
+  image_topic: "/color_image"
+  camera_frame: "/color_camera"

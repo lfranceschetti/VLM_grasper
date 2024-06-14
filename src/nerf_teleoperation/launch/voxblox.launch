@@ -1,0 +1,31 @@
+<launch>
+  <arg name="voxel_size" default="0.01"/>
+
+<!-- <node pkg="monodepth" type="monodepth.py" name="monodepth" output="screen" respawn="true">
+    <param name="topic_color" value="/wide_angle_camera_front/image_raw/compressed"/>
+    <param name="topic_pointcloud" value="/depth_registered/points2"/>
+</node> -->
+
+
+   <node name="voxblox_node" pkg="voxblox_ros" type="tsdf_server" output="screen" args="-alsologtostderr" clear_params="true">
+    <remap from="pointcloud" to="/depth_registered/points"/>
+    <param name="tsdf_voxel_size" value="$(arg voxel_size)" />
+    <param name="tsdf_voxels_per_side" value="16" />
+    <param name="voxel_carving_enabled" value="true" />
+    <param name="color_mode" value="colors" />
+<!-- <param name="use_tf_transforms" value="False" /> -->
+    <param name="update_mesh_every_n_sec" value="1.0" />
+    <param name="min_time_between_msgs_sec" value="0.0" />
+    <param name="method" value="fast" />
+    <param name="use_const_weight" value="false" />
+    <param name="allow_clear" value="true" />
+    <param name="world_frame" value="origin" />
+
+    <param name="output_mesh_as_pcl_mesh" value="true" />
+    <param name="verbose" value="true" />
+    <!-- <remap from="transform" to="/T_G_C" /> -->
+    <!-- <rosparam file="$(find voxblox_ros)/cfg/cow_and_lady.yaml"/> -->
+    <param name="mesh_filename" value="$(find voxblox_ros)/mesh_results/$(anon cow).ply" />
+  </node>
+
+</launch>

@@ -1,0 +1,6 @@
+# Input of sh degree
+uint8 sh_degree
+
+---
+# Output the 
+string base64_ply
