@@ -1,0 +1,15 @@
+# config/camera_config.yaml
+height: 480 # from CameraInfo
+width: 640 # from CameraInfo
+base_frame: "camera_color_optical_frame" # should be fixed, such as "world" or "map"
+num_images: 20 # set to the number of images you want to capture
+num_start: 0 # set to the number of images to capture before training starts
+hz: 2 # capture rate in hz
+blur_threshold: 80 # threshold for blur detection
+validation_factor: 8
+cameras:
+  - name: "color_camera"
+    image_topic: "/camera/color/image_raw"
+    # depth_topic: "/camera/depth/image_rect_raw"
+    info_topic: "/camera/color/camera_info"
+    camera_frame: "camera_color_optical_frame"

@@ -24,7 +24,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 class ROSConfig:
     """Configuration for the ROS node."""
 
-    config_path: Path = Path(__file__).parent.parent / "config" / "arm.yaml"
+    config_path: Path = Path(__file__).parent.parent / "config" / "rosbag.yaml"
     """Path to the config file for sensors. Defaults to the arm depth config file."""
 
     run_on_start: bool = True
