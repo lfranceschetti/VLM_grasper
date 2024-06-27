@@ -9,13 +9,13 @@ import os
 bridge = CvBridge()
 
 # Path to your bag file
-bag_file = 'cam_capture_espresso_cup.bag'
+bag_file = 'plant4.bag'
 
-image_sources = ['/camera/color/image_raw', '/camera/aligned_depth_to_color/image_raw', "/camera/depth/image_rect_raw"]
+image_sources = ['/camera/color/image_raw']
 
 for image_source in image_sources:
     # Output directory for images
-    output_dir = 'extracted_images' + "/" + bag_file.split('.')[0] + "/" + image_source.split('/')[2]
+    output_dir = bag_file.split('.')[0] + "/" + "images"
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -30,6 +30,8 @@ for image_source in image_sources:
                 if msg.encoding == "16UC1":
                     # Handle depth image
                     cv_image = bridge.imgmsg_to_cv2(msg, desired_encoding="passthrough")
+
+                    print("Hi")
                     # Normalize the depth image to 8-bit for visualization
                     cv_image_normalized = cv2.normalize(cv_image, None, 0, 255, cv2.NORM_MINMAX)
                     cv_image_8u = cv_image_normalized.astype('uint8')

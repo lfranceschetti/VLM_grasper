@@ -9,6 +9,8 @@ __pycache__/
 # Ignore VSCode configuration files
 .vscode/
 
+.catkin_tools/
+
 # Ignore environment directories
 venv/
 env/
@@ -49,6 +51,7 @@ install/
 **/checkpoints/
 **/data_robot/
 
+archive/
 
 # NerfStudio Specific Patterns
 ##############################
@@ -59,7 +62,15 @@ outputs/
 # Ignore Nerf exports
 exports/
 
+processed/
+
+splatfacto/
+
 # Ignore Nerf data
 data/
 
 *.png
+
+*.pcd
+
+*.bin

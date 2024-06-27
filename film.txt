@@ -1,0 +1,6 @@
+roslaunch realsense2_camera rs_camera.launch
+
+cd src/rosbag
+
+rosbag record -a -O plant4.bag
+

@@ -1,0 +1,9 @@
+ns-process-data images --data ./images --output-dir ./processed 
+
+cd processed 
+
+colmap image_undistorter --image_path ./processed/images --input_path ./processed/colmap/sparse/0 --output_path ./processed/colmap/dense --output_type COLMAP
+
+colmap patch_match_stereo --workspace_path ./processed/colmap/dense --workspace_format COLMAP --PatchMatchStereo.geom_consistency true
+
+colmap stereo_fusion --workspace_path ./processed/colmap/dense --workspace_format COLMAP --input_type geometric --output_path ./pointcloud
