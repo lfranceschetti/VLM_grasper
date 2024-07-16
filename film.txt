@@ -1,6 +1,7 @@
-roslaunch realsense2_camera rs_camera.launch
+roslaunch realsense2_camera rs_camera.launch align_depth:=true depth_width:=640 depth_height:=480 depth_fps:=15 color_width:=640 color_height:=480 color_fps:=15
 
 cd src/rosbag
 
-rosbag record -a -O plant4.bag
+rosbag record -O pingu2.bag -a -x "(.*)theora(.*)|(.*)compressed(.*)"
+
 

@@ -74,3 +74,8 @@ data/
 *.pcd
 
 *.bin
+
+*.npy
+
+
+*.pth

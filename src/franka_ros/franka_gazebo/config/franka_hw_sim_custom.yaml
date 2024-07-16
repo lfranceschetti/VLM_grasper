@@ -1,0 +1,24 @@
+arm_id:                           $(arg arm_id)
+singularity_warning_threshold:    0.0001               # print a warning if the smallest singular value of J x J^T drops below this value (use -1 to disable)
+
+franka_gripper:
+  type:    franka_gazebo/FrankaGripperSim
+  arm_id:  $(arg arm_id)
+
+  finger1:
+    gains: { p: 100, i: 25, d: 20 }
+
+  finger2:
+    gains: { p: 100, i: 25, d: 20 }
+# calibrated for disk on real robot
+# NE_T_EE: "1.0 .0 .0 .0
+#            .0 -1.0 .0 .0
+#            .0 .0 -1.0 0.0
+#            0.001694710985 .0 0.003986533275 1.0" # this matrix is going to be transposed when loaded!
+NE_T_EE: "1.0 .0 .0 .0
+           .0 -1.0 .0 .0
+           .0 .0 -1.0 0.0
+           0.0 .0 0.0 1.0" # this matrix is going to be transposed when loaded!
+m_load: 0.1
+F_x_Cload: "0.0 0.0 0.0"
+I_load: "0.00224 0.0 0.0 0.0 0.00224 0.0 0.0 0.0 0.00224"

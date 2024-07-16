@@ -8,8 +8,8 @@ pip install pybullet trimesh
 pip install torch-geometric
 pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.2.0+cu121.html
 conda install libffi==3.3
-conda install libtiff=4.4.0
-conda install cffi=1.14.0
+conda install libtiff==4.4.0
+conda install cffi==1.14.0
 
 # # TO run rosbag scripts
 conda install -c conda-forge pycryptodomex
@@ -17,11 +17,16 @@ conda install -c conda-forge opencv
 
 # pip install gnupg
 
+#For Segment anything
+pip install git+https://github.com/facebookresearch/segment-anything.git
+#For Segment anything mask annotation
+pip install supervision
 
-# # To run nerf scripts
-#pip install nerfstudio==1.0.0
+#Maybe (only do it if needed, it is necessary for some postprocessing, which im not sure if we use)
+#pip install opencv-python pycocotools matplotlib onnxruntime onnx
 
-#USE python 3.10 or 3.8?
+
+#USE python 3.10
 
 
 
