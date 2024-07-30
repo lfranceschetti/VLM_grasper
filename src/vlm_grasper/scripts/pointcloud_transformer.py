@@ -6,10 +6,11 @@ from sensor_msgs.msg import PointCloud2
 import sensor_msgs.point_cloud2 as pc2
 import numpy as np
 from sklearn.decomposition import PCA
+from geometry_msgs.msg import Vector3Stamped
 
 
 
-def process_point_cloud(pcd, voxel_size=0.0065):
+def process_point_cloud(pcd):
 
     #Only take the biggest cluster
     labels = np.array(pcd.cluster_dbscan(eps=0.02, min_points=50, print_progress=False))
@@ -21,7 +22,7 @@ def process_point_cloud(pcd, voxel_size=0.0065):
     pcd = pcd.select_by_index(largest_cluster_indices)
 
 
-
+    voxel_size = rospy.get_param("voxel_downsampling", 0.0045)
     # Downsample the point cloud
     downpcd = pcd.voxel_down_sample(voxel_size=voxel_size)
     
@@ -61,12 +62,16 @@ def pca(pcd, threshold=0.01, filter_points=True):
 
 
 
-def normalize_point_cloud(pc, factor=0.3):
+def normalize_point_cloud(pc):
     points = np.asarray(pc.points)
     centroid = np.mean(points, axis=0)
     points -= centroid  # Translate points to origin
+    rospy.set_param("pc_centroid", centroid.tolist())
     max_dist = np.max(np.linalg.norm(points, axis=1))
+    rospy.set_param("max_dist", float(max_dist))
+
     points /= (max_dist)  # Scale points to fit within unit sphere
+    factor = rospy.get_param("normalization_factor", 0.15)
     points *= factor# Scale points to fit within unit sphere
     pc.points = o3d.utility.Vector3dVector(points)
     return pc
@@ -74,6 +79,7 @@ def normalize_point_cloud(pc, factor=0.3):
 def point_cloud_callback(msg, args):
 
     pc_publisher = args[0]
+    normal_vector_publisher = args[1]
     # Convert ROS PointCloud2 message to Open3D point cloud
     points = []
     for point in pc2.read_points(msg, skip_nans=True):
@@ -92,6 +98,15 @@ def point_cloud_callback(msg, args):
 
     # Get the normal vector of the point cloud
     normal_vector, pc_without_table = pca(pc)
+
+    #Create normal vector message
+    normal_vector_msg = Vector3Stamped()
+    normal_vector_msg.header = msg.header
+    normal_vector_msg.vector.x = normal_vector[0]
+    normal_vector_msg.vector.y = normal_vector[1]
+    normal_vector_msg.vector.z = normal_vector[2]
+    normal_vector_publisher.publish(normal_vector_msg)
+
 
     # Create Open3D point cloud from the filtered points
     pc_without_table_o3d = o3d.geometry.PointCloud()
@@ -119,9 +134,11 @@ def point_cloud_callback(msg, args):
 
 
 def main():
-    rospy.init_node('point_cloud_transformer', anonymous=True)
+    rospy.init_node('pointcloud_transformer', anonymous=True)
     pc_publisher = rospy.Publisher('/point_cloud/processed', PointCloud2, queue_size=10)
-    rospy.Subscriber('/point_cloud/unprocessed', PointCloud2, point_cloud_callback, callback_args=(pc_publisher, ))
+    normal_vector_publisher = rospy.Publisher('/surface_normal', Vector3Stamped, queue_size=10)
+    rospy.Subscriber('/point_cloud/unprocessed', PointCloud2, point_cloud_callback, callback_args=(pc_publisher, normal_vector_publisher))
+    #Publisher for normal vector
     
     rospy.spin()
 

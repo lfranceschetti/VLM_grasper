@@ -65,7 +65,7 @@ def add_color_to_point_cloud(point_cloud, color_image):
     return colors
 
 def callback(color_msg, depth_msg):
-    global K_c, D_c, K_d, D_d, latest_color_image, latest_depth_image
+    global K_c, D_c, K_d, D_d, latest_color_image, latest_depth_image, msg_time
 
     if K_c is None or K_d is None:
         rospy.logwarn("Camera intrinsics not yet received.")
@@ -80,6 +80,8 @@ def callback(color_msg, depth_msg):
 
     latest_color_image = color_image
     latest_depth_image = depth_image
+
+    msg_time = depth_msg.header.stamp
 
 def publish_point_cloud(event):
     global latest_color_image, latest_depth_image, last_publish_time
@@ -96,7 +98,7 @@ def publish_point_cloud(event):
 
     # Create a PointCloud2 message
     header = std_msgs.msg.Header()
-    header.stamp = rospy.Time.now()
+    header.stamp = msg_time
     header.frame_id = "camera_link"
     points = np.hstack((point_cloud, colors[valid_mask].reshape(-1, 3)))
     cloud_msg = pc2.create_cloud(header, fields=[
