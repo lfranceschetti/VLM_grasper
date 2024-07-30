@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Launch panda_camera from franka_gazebo -->
+
+  
+  <group >
+    <include file="$(find panda_moveit_config)/launch/demo_gazebo_camera.launch">
+    </include>
+  </group>
+
+ <!-- <node name="set_robot_position" pkg="vlm_grasper" type="set_robot_position.py" output="screen">
+  </node> -->
+  
+</launch>

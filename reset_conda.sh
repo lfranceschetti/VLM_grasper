@@ -29,7 +29,7 @@ which $PYTHON
 # Source ROS setup
 source /opt/ros/noetic/setup.bash
 
-d ~/catkin_ws
+cd ~/catkin_ws
 catkin config -DPYTHON_EXECUTABLE=$PYTHON3
 catkin clean -y
 catkin_make

@@ -1,0 +1,16 @@
+<launch>
+    <!-- Play the rosbag file at half speed and loop indefinitely -->
+    <node pkg="rosbag" type="play" name="play_bag" args="-r 0.5 -l /home/lucfra/catkin_ws/src/rosbag/pingu2.bag" />
+
+
+
+    <!-- Start the image_to_pc.py node -->
+    <node pkg="vlm_grasper" type="image_to_pc.py" name="image_to_pc" output="screen" />
+
+    <!-- Start the process_pc.py node -->
+    <node pkg="vlm_grasper" type="process_pc.py" name="process_pc" output="screen" />
+
+    <node pkg="vlm_grasper" type="edge_grasp.py" name="edge_grasp" output="screen" />
+
+
+</launch>

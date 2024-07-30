@@ -65,10 +65,10 @@ def save_point_cloud(pcd, path):
 
 if __name__ == "__main__":
     # Update the path to your point cloud file
-    input_ply_path = "pc_colored_w_table.ply"
+    input_ply_path = "pc_colored_w_table_sim.ply"
     
     plant_pcd = load_and_segment_point_cloud(input_ply_path)
     visualize_point_cloud(plant_pcd)
     processed_pcd = process_point_cloud(plant_pcd)
-    save_point_cloud(plant_pcd, "pc_processed_w_table.ply")
+    save_point_cloud(plant_pcd, "pc_processed_w_table_sim.ply")
     visualize_point_cloud(processed_pcd)
