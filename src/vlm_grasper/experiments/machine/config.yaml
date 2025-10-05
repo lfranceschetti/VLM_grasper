@@ -1,0 +1,9 @@
+scene: machine
+number_of_objects: 1
+voxel_downsampling: 0.0065
+max_distance_points: 1.4
+number_of_grasps: 5
+score_threshold: 0.4
+ransac_threshold: 0.011
+tasks:
+  - "Take the drill how you would grasp it to drill a hole"

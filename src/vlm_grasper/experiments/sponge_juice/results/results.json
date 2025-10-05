@@ -1,0 +1,494 @@
+[
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Blue",
+        "reasoning": {
+            "Green": "The Green grasp is positioned on the cap of the bottle and is not suitable for picking up the sponge. It's not aligned with the goal of cleaning.",
+            "Red": "The Red grasp is positioned near the body of the bottle and not oriented towards the sponge. It's unlikely to assist in picking up the sponge effectively.",
+            "Blue": "The Blue grasp is oriented around the middle section of the sponge, perfectly positioned for grasping it securely to clean up the spill."
+        },
+        "scene_description": "The scene shows a white table with two objects on it. To the left, there is a blue sponge, oriented vertically with the scrub side visible. To the right, there is a bottle of orange juice, standing upright with the cap facing up.",
+        "task_evaluation": "To clean the orange juice, the sponge is the most appropriate object. The sponge should be grasped at its middle section to allow maximum surface contact with the spill.",
+        "experiment_number": 1
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp position is slightly angled and positioned towards the neck of the bottle. This would allow for a secure grasp just below the cap, making it suitable for picking up the bottle efficiently.",
+            "Red": "The Red grasp position is also near the neck but more central and less angled compared to the Green. It would offer a direct approach to grasp the bottle firmly around the neck.",
+            "Blue": "The Blue grasp position is around the middle of the bottle. While it could provide balance, gripping the bottle here may not be as stable as the neck due to the bottle's wider body and potential for tilting."
+        },
+        "scene_description": "The scene depicts a white tabletop with two primary objects visible: a blue sponge on the left and a yellow bottle, likely containing a drink, on the right. The bottle has a green cap and is placed upright. The marked grasp positions (Green, Red, Blue) are situated above and slightly around the bottle.",
+        "task_evaluation": "The task goal is to provide a drink. The yellow bottle appears to be the only object that can fulfill this requirement. The best part of the bottle to grasp would be around the neck, just below the cap, as this area is usually narrower and allows for a secure hold without obstructing the opening of the bottle.",
+        "experiment_number": 1
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned above the sponge. The orientation is suitable for grabbing the top center part of the sponge, which allows effective control for wiping motions.",
+            "Red": "The Red grasp is positioned above the bottle's cap. While it can grasp the bottle, this doesn't help in cleaning the spill.",
+            "Blue": "The Blue grasp is also aligned with the bottle and not suitable for cleaning purposes, as grabbing the bottle does not facilitate absorption or wiping."
+        },
+        "scene_description": "On the table, there is a blue sponge on the left side and a bottle of orange juice on the right side. The sponge is vertically oriented with the longer edge facing upwards. The bottle is upright with the cap facing upwards.",
+        "task_evaluation": "To clean up the spilled orange juice, the sponge is the most suitable object for absorption and wiping.",
+        "experiment_number": 2
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Blue",
+        "reasoning": {
+            "Green": "The Green grasp position is near the sponge. Since the sponge is not a drink, this grasp is unsuitable for the task.",
+            "Red": "The Red grasp is positioned near the top of the orange juice bottle. This allows for a stable grip on the bottle's neck but might not be as secure as gripping the main body.",
+            "Blue": "The Blue grasp is positioned around the main body of the orange juice bottle, providing a full and stable grip. This grasp would ensure secure handling and easy handover."
+        },
+        "scene_description": "The scene features two main objects on a table. On the left is a blue sponge standing vertically, and on the right is an orange juice bottle with a green cap. The bottle is positioned upright. There are three potential grasp positions marked by different colors: Green near the sponge, and Red and Blue near the orange juice bottle.",
+        "task_evaluation": "The task is to hand over a drink to fulfill the request of providing something for thirst. The only suitable object for this task is the orange juice bottle. The best place to grasp it would be around its main body for a secure hold.",
+        "experiment_number": 2
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The Green grasp is positioned above the orange juice bottle. It is focused on the cap area of the bottle, which isn't ideal for cleaning tasks.",
+            "Red": "The Red grasp is positioned above the middle section of the sponge. This is suitable as it allows the sponge to be used effectively for wiping and absorbing the spilled juice.",
+            "Blue": "The Blue grasp is also targeting the orange juice bottle, aiming at its midsection. This grasp isn't suitable for cleaning the spill."
+        },
+        "scene_description": "The scene features a white table with two primary objects: a blue sponge on the left and a bottle of orange juice on the right. The sponge is standing vertically, while the bottle is standing upright.",
+        "task_evaluation": "To clean up the spilled orange juice, the sponge is the appropriate tool.",
+        "experiment_number": 3
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is directly aligned with the bottle cap, making it a suitable choice for picking up the bottle securely, ensuring the grip is stable and well-balanced.",
+            "Red": "The Red grasp is positioned over the sponge, which does not fulfill the task requirements as the sponge is not a drink.",
+            "Blue": "The Blue grasp is aligned with the bottle, similar to the Green grasp, but is positioned lower. This position may not provide as secure a grip as the Green grasp which is more aligned with the cap."
+        },
+        "scene_description": "The scene features a table with two objects: a bottle of juice on the right and a sponge on the left. The bottle is upright, with a cap on top, suitable for holding liquids. The sponge is blue and does not contain any liquids. Three grasp positions are indicated in different colors: Green is positioned directly over the bottle cap, Red is positioned on the sponge, and Blue is also positioned over the bottle, slightly lower than the Green position.",
+        "task_evaluation": "The task is to hand a drink to the requester, which indicates that the bottle of juice is the desired object to interact with. The bottle should be grasped around the cap for a secure hold.",
+        "experiment_number": 3
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The green grasp is positioned above the juice bottle cap. This grasp is not suitable since the bottle is not an effective tool for cleaning.",
+            "Red": "The red grasp is positioned above the sponge. It seems to align well with the flat surface, which is ideal for grasping the sponge and using it to clean the spill.",
+            "Blue": "The blue grasp is also positioned above the juice bottle. Similar to the green grasp, it is not suitable for picking up the sponge to clean."
+        },
+        "scene_description": "The scene contains a sponge on the left and an orange juice bottle on the right. The sponge is oriented vertically with its flat side facing the camera. The juice bottle is upright with the cap on top. The sponge is closer to the bottom left corner of the image, while the bottle is more towards the center-right.",
+        "task_evaluation": "To clean the spilled orange juice, the sponge is the most appropriate object. The bottle is not suitable for cleaning as it is the source of the spill, not the cleaning tool.",
+        "experiment_number": 4
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned at the top side of the bottle. It seems well-aligned and would allow for a secure grip around the neck or upper body of the bottle, minimizing slippage.",
+            "Red": "The Red grasp is positioned over the sponge, which is not a drink. Thus, grasping here doesn\u2019t fulfill the task requirement.",
+            "Blue": "The Blue grasp is also positioned on the juice bottle, around the upper body. This orientation looks secure but slightly less direct than the Green grasp due to the angle of approach."
+        },
+        "scene_description": "The scene consists of a white surface with two main objects: an orange juice bottle located at the center right and a blue sponge located to the left. The juice bottle is vertically oriented, with a green cap on top. The items are placed on a table with grasp markers positioned above them. The Green and Blue grasp markers are both positioned over the orange juice bottle, and the Red grasp marker is positioned over the sponge, diagonally oriented.",
+        "task_evaluation": "The task is to hand over a drink, for which the orange juice bottle is suitable. The best grasp would be around the top or mid-section of the bottle to ensure a stable hold and to allow for easy pick-up and delivery.",
+        "experiment_number": 4
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The green grasp is positioned over the juice bottle. Grasping the bottle does not align with the task of cleaning up the spilled juice, as the bottle is not useful for soaking up liquids.",
+            "Red": "The red grasp is positioned over the sponge. This position is ideal for picking up the sponge, which is suitable for cleaning the spill. The orientation aligns well with grasping the thicker, more stable parts of the sponge.",
+            "Blue": "The blue grasp is also positioned over the juice bottle, similar to the green grasp. Again, this is not suitable for the cleaning task."
+        },
+        "scene_description": "The scene depicts a white table with two objects. On the left, there is a blue sponge standing upright vertically. On the right, there is an orange juice bottle standing vertically. The sponge is positioned closer to the camera, while the juice bottle is slightly further back along the horizontal plane.",
+        "task_evaluation": "The task is to clean up spilled orange juice, which suggests using the sponge. The best area to grasp the sponge is its broader, flat sides to ensure a secure grip and efficient cleaning action.",
+        "experiment_number": 5
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Blue",
+        "reasoning": {
+            "Green": "The green grasp is located near the neck of the bottle. While this position might allow the gripper to hold the bottle, it could be less stable due to the slim bottleneck providing less surface area for a secure grip.",
+            "Red": "The red grasp is associated with the sponge, which is not a suitable object for the task of handing a drink.",
+            "Blue": "The blue grasp is positioned around the middle of the bottle. This provides a stable grasp as the gripper encompasses a larger surface area of the bottle, making it a suitable choice for securely picking up the drink."
+        },
+        "scene_description": "The scene features a table with two objects placed on it. To the left is a blue sponge leaning vertically with a red grasp overlay. To the right is a bottle of orange juice standing upright, with green and blue grasp overlays. The green grasp is closer to the bottle's neck, while the blue grasp is situated around the middle body of the bottle.",
+        "task_evaluation": "The task is to hand a drink, which indicates the need to pick up the bottle of orange juice. The most appropriate action would be to grasp the midsection of the bottle for stability and ease of handling.",
+        "experiment_number": 5
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The Green grasp is positioned above the bottle, which is not suitable for cleaning up spilled orange juice. The orientation and shape are aligned with lifting the bottle, not practical for wiping or absorbing liquid.",
+            "Red": "The Red grasp is positioned over the left side of the sponge, with its horizontal grasp line aligning well with the sponge's flat sides. This would allow secure grasping and effective manipulation for cleaning the spill.",
+            "Blue": "The Blue grasp is similarly positioned over the edge of the sponge but is slightly less central compared to the Red grasp. It can still grasp the sponge, but may not provide as much control for cleaning motions."
+        },
+        "scene_description": "The scene consists of a white table with two main objects: a blue sponge positioned on the left side vertically and a small orange juice bottle positioned upright to the right of the sponge. The sponge is closer to the left edge of the table, while the bottle is closer to the right edge. There are three visible grasp options depicted using colored 'T' shapes: Green is located directly above the orange juice bottle, Red is placed above the left part of the sponge, and Blue is placed, similar to the Red grasp, above the left side of the sponge.",
+        "task_evaluation": "The task is to clean up spilled orange juice, which makes the sponge the appropriate tool for absorption and cleaning. To effectively use the sponge, the best grasp would be on the sides to allow for efficient manipulation and wiping.",
+        "experiment_number": 6
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned around the top section of the bottle. This position is ideal for securely gripping the bottle, as it aligns well with the cylindrical shape, allowing for a stable hold without interfering with the cap.",
+            "Red": "The Red grasp is near the blue sponge. It is not suitable as it is not aligned with the bottle. Grasping here would not fulfill the task requirement of providing a drink.",
+            "Blue": "The Blue grasp is also adjacent to the sponge, similar to the Red grasp. It does not align with the bottle and thus is not suitable for grasping the drink."
+        },
+        "scene_description": "The scene contains two primary objects on a white surface. To the left, there is a blue sponge standing vertically. To the right, there is an orange juice bottle with a green cap. The objects are spaced apart, with the bottle positioned closer to the center of the table.",
+        "task_evaluation": "The task is to provide a drink, which corresponds to the orange juice bottle. The best grasp for this would involve approaching around the body of the bottle, ensuring a secure and stable grip.",
+        "experiment_number": 6
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "None",
+        "reasoning": {
+            "Green": "The Green grasp is aligned with the top of the bottle, which is not suitable for picking up the sponge required for cleaning. This position lacks effectiveness for the task at hand.",
+            "Red": "The Red grasp is also positioned around the top part of the bottle. It is similarly unsuitable for grasping the sponge necessary for cleaning up the spill.",
+            "Blue": "The Blue grasp seems to encompass the top of the bottle as well. None of these positions are aligned with the task of cleaning, as they do not target the sponge."
+        },
+        "scene_description": "The scene contains a bottle of orange juice placed upright on the right side of the table. The bottle has a visible cap at the top and is situated closer to the top right corner. On the left side of the table, there is a blue cleaning sponge, oriented vertically and leaning slightly to the right. The table is empty aside from these objects.",
+        "task_evaluation": "The task is to clean up spilled orange juice. The sponge on the left side of the table is the appropriate tool for cleaning. It should be grasped on its top part, along the wider edge, which can maximize the area of contact and facilitate effective cleaning.",
+        "experiment_number": 7
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned around the neck of the bottle, which provides a secure hold, allowing for easy and stable lifting. This positioning aligns well with reaching and handing over the drink.",
+            "Red": "The Red grasp is located near the top of the bottle but slightly off-center. While it could work, it may not provide as stable a grip as the Green position for a vertical lift.",
+            "Blue": "The Blue grasp is positioned at the top of the bottle cap. While it might be possible to lift the bottle from here, it risks slipping off and does not provide the most secure grip for transferring the drink."
+        },
+        "scene_description": "The scene features a white table with two visible objects. On the left side, there is a blue sponge lying horizontally. On the right side, there is a bottle of orange juice standing upright with three potential grasp positions marked - Green, Red, and Blue. The bottle has a cap on top and is positioned nearer to the center of the table than the sponge.",
+        "task_evaluation": "The task is to pick up a drink. The orange juice bottle on the right is the object that fulfills this requirement. The most effective grasp would be around the neck or the body of the bottle for secure handling.",
+        "experiment_number": 7
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The green grasp is positioned around the middle of the orange juice bottle. This grasp is not suitable since the bottle is not useful for cleaning the spill.",
+            "Red": "The red grasp is positioned on the sponge and is centered, making it ideal for picking up the sponge securely and enabling effective cleaning.",
+            "Blue": "The blue grasp is on the shoulder area of the orange juice bottle. It is not suitable for cleaning, as the bottle does not assist in this task."
+        },
+        "scene_description": "The scene displays a table with two objects: a blue sponge and a bottle of orange juice. The sponge is positioned on the left side of the table, standing vertically. The orange juice bottle is located to the right of the sponge, upright. There are no other objects visible on the table.",
+        "task_evaluation": "To clean the spilled orange juice, the sponge is the appropriate object to use. The sponge is absorbent and designed for cleaning tasks. Grasping the sponge around its middle section would allow optimal control and application of pressure during cleaning.",
+        "experiment_number": 8
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The green grasp position is around the midsection of the bottle, providing a stable hold that is aligned with the goal of handing over a drink.",
+            "Red": "The red grasp is near the sponge, which is not the object required for the task of handing over a drink.",
+            "Blue": "The blue grasp is also around the bottle but slightly closer to the top. It could work, but gripping the midsection (as the green grasp suggests) would be more stable."
+        },
+        "scene_description": "On the table, there is a blue sponge on the left and a bottle of orange juice on the right. The sponge is upright, while the bottle has an easy-to-see cap at the top. The bottle is closer to the center of the table compared to the sponge.",
+        "task_evaluation": "The task requires handing over a drink. Therefore, the object that can fulfill the task is the bottle of orange juice. The best place to grasp the bottle would be around its midsection to ensure a secure hold.",
+        "experiment_number": 8
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The Green grasp is positioned around the bottle, which isn't helpful for cleaning. It wouldn't allow effective use of the sponge.",
+            "Red": "The Red grasp is suitable for the sponge. It is positioned to grip the middle of the sponge, allowing for effective control and maneuverability in cleaning.",
+            "Blue": "The Blue grasp also targets the bottle, which is not the ideal object for cleaning up the spill. It doesn't align with the cleaning task."
+        },
+        "scene_description": "The scene shows a white table with two primary objects: a blue sponge and a bottle of orange juice. The sponge is on the left side, oriented vertically, and the bottle is on the right side, standing upright.",
+        "task_evaluation": "To clean up spilled orange juice, using the blue sponge is appropriate. The sponge is specifically designed to absorb liquids. To grab the sponge, the ideal grasp position would be in the middle section, allowing for optimal control while cleaning.",
+        "experiment_number": 9
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The green grasp position is aligned with the center of the juice bottle, slightly below the cap. This positioning is optimal as it provides a stable grip around the bottle neck, ensuring the bottle can be lifted securely without slipping.",
+            "Red": "The red grasp position is centered over the sponge, which is not suitable for fulfilling the task of handing over a drink, as the sponge is not a beverage container.",
+            "Blue": "The blue grasp position targets the lower part of the juice bottle. While it can grasp the bottle, it is less ideal compared to the green position due to the bottle's shape, which may cause the grip to be less secure, potentially leading to slipping or tipping."
+        },
+        "scene_description": "The scene contains a table with two primary objects. On the left is a blue sponge standing vertically. On the right is an orange juice bottle with a green cap, positioned upright. The objects are spaced apart with the sponge closer to the left edge of the table and the juice bottle more towards the center.",
+        "task_evaluation": "The task is to hand over a drink. The orange juice bottle is a suitable object to fulfill the task of providing a beverage. The ideal grasp point would be around the neck of the bottle, just below the cap, to ensure a secure lift and transfer.",
+        "experiment_number": 9
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned over the sponge. This is the most suitable option because it allows for proper grasping of the cleaning sponge, making it easy to use for wiping up the spill.",
+            "Red": "The Red grasp is positioned over the orange juice bottle. This is not suitable for cleaning the spill as picking up the bottle does not help in wiping the spill.",
+            "Blue": "The Blue grasp is also positioned over the orange juice bottle at a different angle. Similar to the Red grasp, it is not suitable for cleaning the spill."
+        },
+        "scene_description": "The scene consists of a table with two objects on it. On the left side, there is a blue cleaning sponge standing upright. To its right, there is a bottle of orange juice with a green cap. Three potential grasp positions are marked with small 'T' shapes: Green is positioned over the sponge, Red is positioned over the orange juice bottle, and Blue is also positioned over the orange juice bottle, but at a slightly different angle.",
+        "task_evaluation": "The task requires cleaning spilled orange juice, which suggests using the sponge. To fulfill the task, the sponge should be grasped around its middle section to ensure a firm hold for effective cleaning.",
+        "experiment_number": 10
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Blue",
+        "reasoning": {
+            "Green": "The Green grasp position is located near the sponge, making it irrelevant for picking up the drink. This grasp is unsuitable as it does not align with the orange juice bottle.",
+            "Red": "The Red grasp position is positioned slightly above the orange juice bottle cap. While it is aligned with the bottle, grasping here might lead to imbalance as the cap is narrower and could slip.",
+            "Blue": "The Blue grasp position is directly aligned with the midsection of the orange juice bottle. This position ensures a firm hold on the bottle\u2019s body, providing the best stability for picking it up safely."
+        },
+        "scene_description": "The scene features a white table with two objects. On the left is a blue sponge standing upright. On the right, there is an orange juice bottle with a green cap, standing vertically. The bottle is positioned closer to the center of the table.",
+        "task_evaluation": "The task is to pick up a drink, which is represented by the orange juice bottle. The bottle\u2019s cylindrical shape and upright position make it the suitable object for quenching thirst. For optimal grasp, holding the bottle around its middle section provides stability and prevents spillage.",
+        "experiment_number": 10
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "This grasp is positioned over the top of the orange juice bottle. It is suitable for picking up the bottle but not effective for cleaning purposes, as the bottle is not useful for absorbing spills.",
+            "Red": "This grasp is located around the top of the sponge. It is appropriate for picking up the sponge, allowing the wider part of the sponge to be used for wiping up the spill effectively.",
+            "Blue": "This grasp targets the side of the orange juice bottle. Like the green grasp, it is not suitable for cleaning as the bottle does not aid in absorbing liquid."
+        },
+        "scene_description": "The scene features two main objects on a table. On the left side is a blue sponge standing upright. To the right of the sponge is an orange juice bottle with a green cap, placed vertically. The sponge is closer to the left edge of the table, while the juice bottle is positioned near the center.",
+        "task_evaluation": "To clean the spilled orange juice, the sponge is the appropriate object to use. The sponge can absorb liquid, making it ideal for cleaning spills. The approach should focus on grasping the sponge at an optimal position for efficient use.",
+        "experiment_number": 11
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned around the middle of the bottle. This position is optimal for grasping the bottle\u2019s body and provides good stability and control when lifting.",
+            "Red": "The Red grasp is aligned with the blue sponge. This grasp is not suitable as the sponge does not fulfill the task of handing a drink.",
+            "Blue": "The Blue grasp is near the neck of the orange juice bottle. While it could work, it might not provide the same level of stability as grasping the body due to the narrower size and proximity to the cap, which could lead to slippage."
+        },
+        "scene_description": "The scene depicts a table with two objects. On the right, there is a bottle of orange juice, which is cylindrical and has a cap on top. On the left, there is a rectangular blue sponge, standing upright. The orange juice bottle is closer to the center of the table, while the sponge is placed further to the left.",
+        "task_evaluation": "The task requires providing a drink. The object suitable for this task is the bottle of orange juice, as it is the only drinkable item visible. The optimal part to grasp is the body of the bottle, which provides secure handling and prevents interference with the cap.",
+        "experiment_number": 11
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Blue",
+        "reasoning": {
+            "Green": "The Green grasp is positioned above the bottle's cap, which is not suitable for grasping the sponge needed for cleaning.",
+            "Red": "The Red grasp is positioned on the side of the bottle, which does not align with grasping the sponge.",
+            "Blue": "The Blue grasp is positioned to the side of the sponge and can grasp the wide edge. This position is suitable as it allows the gripper to securely hold the sponge."
+        },
+        "scene_description": "The scene contains a white table with two objects visible. On the left side of the table, there is a blue sponge standing upright. On the right side, closer to the center, there's a bottle of orange juice standing upright. Above the bottle, there are three grasp positions marked with different colors: Green, Red, and Blue.",
+        "task_evaluation": "The task is to clean up spilled orange juice, so the object needed is the blue sponge, as it is suitable for absorbing liquid. The ideal grasp of the sponge would be around its wider side, allowing the gripper to cover more surface area for cleaning.",
+        "experiment_number": 12
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is aligned with the body of the bottle. It is positioned slightly below the cap, which makes it suitable for a firm grip and easy lifting.",
+            "Red": "The Red grasp is aligned diagonally and located towards the top of the cap, making it less stable for lifting the bottle securely.",
+            "Blue": "The Blue grasp is also aligned diagonally but positioned slightly below the cap on the side of the bottle, providing a reasonable grip but less ideal than Green."
+        },
+        "scene_description": "The scene shows a table with a small orange juice bottle positioned towards the center-right and a blue sponge to the left of the bottle. The bottle is upright. The grasp positions are marked around the bottle with Green, Red, and Blue colors.",
+        "task_evaluation": "The task is to pick up the juice bottle to quench thirst. We should grasp the bottle around its body, just below the cap, to ensure a secure grip.",
+        "experiment_number": 12
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The Green grasp is over the bottle of orange juice. It is not suitable for picking up the sponge to clean the spill.",
+            "Red": "The Red grasp is positioned over the sponge, aligning well with one of its shorter edges. This grasp will provide a secure hold on the sponge, making it suitable for the cleaning task.",
+            "Blue": "The Blue grasp is again over the orange juice bottle, similar to the Green grasp. This position does not align with our task objective of cleaning the spill."
+        },
+        "scene_description": "The scene depicts a white table with two objects on it: a blue sponge to the left and a bottle of orange juice to the right. The sponge is upright with its longer side parallel to the horizontal axis. The bottle is standing upright near the center-right of the table. Three potential grasp positions are marked: Red grasp is near the top left of the sponge, Green grasp is over the top of the bottle, and Blue grasp is also over the bottle but slightly angled differently.",
+        "task_evaluation": "The task is to clean up spilled orange juice. The sponge is the object that can be used for cleaning, as it is designed to absorb liquid. The appropriate area to grasp the sponge would be one of its sides where the grip will be secure.",
+        "experiment_number": 13
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned near the top of the bottle and is well aligned with the bottle\u2019s neck. This position allows for a secure grip on the bottle, ensuring stability without risking slippage.",
+            "Red": "The Red grasp is positioned near the sponge, which is not the object needed for the task. While the grasp is well-positioned for the sponge, it is irrelevant to the task of providing a drink.",
+            "Blue": "The Blue grasp is aligned slightly below the bottle's neck, still offering a reasonable position for gripping the bottle securely. However, it\u2019s not as optimal as the Green grasp due to the more awkward position closer to the bottle\u2019s body, which might not provide as stable a grip."
+        },
+        "scene_description": "The scene shows a white table with two main objects. On the right side, there is a bottle, likely containing a drink, identifiable by its orange color and cylindrical shape. On the left side, there is a blue sponge, rectangular in shape and upright. The bottle is closer to the right edge of the table while the sponge is towards the left.",
+        "task_evaluation": "The task is to hand over a drink to quench thirst. The bottle on the right is the object best suited to fulfill this task as it appears to contain a beverage. The optimal area to grasp the bottle would be around its neck or the main body to ensure a secure grip.",
+        "experiment_number": 13
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The green grasp is positioned to grip the sponge at its top, which is ideal for using the broad side effectively for cleaning.",
+            "Red": "The red grasp is near the orange juice bottle, making it unsuitable for picking up the sponge.",
+            "Blue": "The blue grasp is aligned with the orange juice bottle, not appropriate for grabbing the sponge needed for cleaning.",
+            "Black": "The black grasp is not visible in the image, hence it cannot be evaluated.",
+            "White": "The white grasp is also not visible in the image, so it cannot be evaluated for its suitability."
+        },
+        "scene_description": "The scene shows a white table with two main objects: a blue sponge on the left side and an orange juice bottle on the right side. The blue sponge is upright and its flat side faces towards the right, providing a wide surface area. The orange juice bottle is upright with the cap visible on top.",
+        "task_evaluation": "To clean spilled orange juice, the sponge is the appropriate tool for the task. Grasping the sponge at its wider side would allow for optimal coverage and absorbency during cleaning.",
+        "experiment_number": 14
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Blue",
+        "reasoning": {
+            "Green": "The Green grasp is positioned near the blue sponge, which is not a suitable object for the task of handing a drink.",
+            "Red": "The Red grasp is positioned near the top part of the juice bottle. It may not provide the most secure grip as it's close to the cap, risking slippage.",
+            "Blue": "The Blue grasp is positioned slightly below the Red, more toward the middle of the juice bottle. This provides a better grip, as it allows for a strong hold on the body of the bottle, minimizing slipping.",
+            "Black": "There is no Black grasp visible in this image or associated with an object.",
+            "White": "There is no White grasp visible in this image or associated with an object."
+        },
+        "scene_description": "The scene contains a white table with two main objects. On the left side is a blue sponge, standing upright with its narrow edge facing up. On the right side is a small orange juice bottle with a green cap, standing upright. There are multiple grasp markers visible: Green near the sponge, and Red and Blue near the bottle.",
+        "task_evaluation": "The task is to hand over a drink. The orange juice bottle is the only suitable object to fulfill the task, as it is a beverage container. The best place to grasp the bottle would be around its middle section to ensure a secure hold without squeezing the bottle too much.",
+        "experiment_number": 14
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is aligned well for picking up the sponge directly from the side. This orientation allows a firm grip, suitable for pressing and wiping the spill.",
+            "Red": "The Red grasp is positioned over the orange juice bottle. This is not suitable for the task as the bottle is not needed for cleaning.",
+            "Blue": "The Blue grasp is also aligned over the bottle, similar to the Red grasp, making it unsuitable for the task.",
+            "Black": "The Black grasp is not visible in the image and cannot be evaluated.",
+            "White": "The White grasp is not visible in the image and cannot be evaluated."
+        },
+        "scene_description": "On the table, there is a blue sponge positioned towards the left and an orange juice bottle near the center. The sponge is upright, and the bottle is standing vertically with its cap facing up.",
+        "task_evaluation": "The task requires cleaning up spilled orange juice. The sponge is the appropriate object to use for cleaning the spill. The ideal grasp would focus on picking up the sponge centrally, ensuring a secure grip to allow for effective wiping motions.",
+        "experiment_number": 15
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Black",
+        "reasoning": {
+            "Green": "The Green grasp position is aimed at the sponge, making it unsuitable for picking up a drink.",
+            "Red": "The Red grasp is also centered around the sponge, unsuitable for the task aimed at the juice bottle.",
+            "Blue": "The Blue grasp is near the top of the orange juice bottle. While it can secure the cap, gripping the bottle around its middle would be more stable.",
+            "Black": "The Black grasp is positioned around the middle of the juice bottle, making it ideal for providing stability when lifting the bottle.",
+            "White": "The White grasp is at the base of the juice bottle, which might cause instability if the bottle is lifted. A middle grip is preferred."
+        },
+        "scene_description": "The scene depicts a table with two main objects: a blue sponge on the left and a bottle of orange juice on the right. The juice bottle is upright with the cap at the top. The sponge is vertically oriented with its broad side facing forward. There are grasp positions marked in various colors around these objects, with Green and Red near the sponge, and Blue, Black, and White near the juice bottle.",
+        "task_evaluation": "The task requires handing over a drink, which means the focus should be on the orange juice bottle. The bottle should be grasped around the middle of its body to ensure stability when lifted and handed over. Thus, I should choose a grasp position that aligns with this part of the bottle.",
+        "experiment_number": 15
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The Green grasp is positioned over the cap of the bottle. It is not suitable for cleaning tasks as it targets the bottle, which is not used for cleaning spills.",
+            "Red": "The Red grasp is positioned over the top edge of the sponge. This position is ideal for picking up the sponge, allowing for effective handling to clean up the spilled juice.",
+            "Blue": "The Blue grasp is positioned at the neck of the bottle. Like the Green grasp, it targets the bottle, which is not suitable for the cleaning task."
+        },
+        "scene_description": "On the table, there are two main objects: a blue sponge on the left and an orange juice bottle on the right. The sponge is upright, oriented vertically. The orange juice bottle is placed to the right of the sponge, standing vertically. Three grasp positions are visible: Green, located above the bottle's cap; Red, positioned over the top edge of the sponge; Blue, also near the bottle's neck.",
+        "task_evaluation": "The task is to clean the spilled orange juice. The blue sponge is the most suitable object for cleaning spills. The ideal grasp would be on the top of the sponge where it's thickest to ensure a firm hold for cleaning.",
+        "experiment_number": 16
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Blue",
+        "reasoning": {
+            "Green": "The Green grasp is positioned over the juice bottle\u2019s cap. While it is aligned with the bottle, grasping the cap is not ideal as it may risk tipping the bottle.",
+            "Red": "The Red grasp is located over the sponge, which is not relevant to the task of handing over a drink.",
+            "Blue": "The Blue grasp is positioned at the side of the juice bottle, offering a good alignment with its shape. This position is suitable for a secure hold on the bottle\u2019s body."
+        },
+        "scene_description": "On the table, there is a bottle of juice positioned towards the right side, and a blue sponge located towards the left side. The juice bottle is cylindrical with a small cap on top, while the sponge is rectangular and standing upright.",
+        "task_evaluation": "The task requires handing over a drink, so the object of interest is the juice bottle. To grasp the bottle effectively, the grasp should align with the cylindrical shape, ideally around its midsection for a secure hold.",
+        "experiment_number": 16
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The Green grasp is oriented around the top of the juice bottle and is not suitable for picking up the sponge. It does not align with the task of cleaning the spill.",
+            "Red": "The Red grasp is situated near the sponge, allowing for an effective hold. Grasping the middle section of the sponge would offer the best leverage for cleaning.",
+            "Blue": "The Blue grasp is positioned near the top of the juice bottle. Similar to the Green grasp, it is unsuitable for picking up the sponge to clean the spill."
+        },
+        "scene_description": "The scene shows a white table with two main objects: a blue sponge on the left and an orange juice bottle on the right. The sponge is vertically oriented, while the bottle is standing upright. There are three grasp positions marked: Red near the sponge, Blue near the top of the juice bottle, and Green also near the top of the juice bottle.",
+        "task_evaluation": "The task is to clean up the spilled orange juice. The most suitable object for this task is the sponge. To effectively clean, the gripper should grasp the sponge around its middle section to maximize surface contact.",
+        "experiment_number": 17
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is perfectly aligned with the juice bottle, allowing for an optimal grip around its middle, ensuring stability for lifting.",
+            "Red": "The Red grasp is aligned with the sponge, which is not a drinkable object, making this grasp unsuitable for fulfilling the task.",
+            "Blue": "The Blue grasp is positioned between the sponge and the bottle but is not aligned with the bottle, making it less stable for grasping and lifting the juice bottle."
+        },
+        "scene_description": "The scene features a flat surface with two main objects: a blue sponge positioned toward the left and an orange juice bottle located to the right. The sponge is standing vertically, while the bottle is upright with a cap on top. The three potential grasp positions are marked as follows: Green is positioned directly above the juice bottle, aligned with its central axis; Red is above the blue sponge, also aligning centrally; Blue is to the right of the sponge and to the left of the bottle but seems misaligned with any object for optimal grasping.",
+        "task_evaluation": "The task requires handing over a drink. The only object fitting this requirement is the juice bottle. Grasping would be more effective around the body of the bottle, providing stability to lift and pass it securely.",
+        "experiment_number": 17
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "None",
+        "reasoning": {
+            "Green": "The Green grasp is positioned above the bottle cap. This grasp is not suitable since it is for grasping the bottle, not the sponge needed for cleaning.",
+            "Red": "The Red grasp is on the side of the bottle. Similar to the Green grasp, it is not appropriate for picking up the sponge required for cleaning the spill.",
+            "Blue": "The Blue grasp is positioned near the lower portion of the bottle. Like the other two grasps, it targets the bottle, not the sponge, making it unsuitable for cleaning."
+        },
+        "scene_description": "On the table, there is a blue sponge on the left side and an orange juice bottle with a green cap in the middle-right of the scene. The bottle is upright, and the grasp positions are marked above it.",
+        "task_evaluation": "To clean the spilled orange juice, the sponge is the appropriate object to use. The most effective way to pick up the sponge is by grasping it at the top along its horizontal edge, ensuring a secure grip to wipe the surface effectively.",
+        "experiment_number": 18
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The Green grasp is positioned at the top of the bottle, near the cap. Grasping here may not provide sufficient balance or control to lift the bottle securely, as it involves a more top-heavy approach.",
+            "Red": "The Red grasp is positioned mid-body of the bottle. This position offers a stable and balanced grasp, covering the central body with equal distribution around the mass, making it ideal for lifting the bottle securely.",
+            "Blue": "The Blue grasp is positioned slightly below the mid-section of the bottle. While it also covers the main body, it might not be as stable as the Red grasp due to being too low, which could cause imbalance."
+        },
+        "scene_description": "The table contains two objects: a yellow-orange juice bottle with a green cap positioned on the right side, and a blue sponge located more to the left. The juice bottle stands upright with its cap at the top, and the sponge is placed vertically with its cleaning surface exposed. Three potential grasp positions are marked around the bottle with Green, Red, and Blue 'T' shapes.",
+        "task_evaluation": "The task is to provide a drink. The bottle of juice is the only suitable object for this task. To hand the bottle efficiently, a grasp around its center of mass, particularly around the bottle's main body, would be ideal for stability and control.",
+        "experiment_number": 18
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The green grasp is positioned over the sponge, which is suitable for the task. It is aligned well with the top of the sponge, allowing for a secure grip to pick up and use the sponge for cleaning.",
+            "Red": "The red grasp is over the orange juice bottle. This is not useful for cleaning the spill, as the bottle is not absorbent and would not help in the task.",
+            "Blue": "The blue grasp is also near the orange juice bottle, similar to the red grasp. It is not suitable for the task as it does not involve the sponge, which is necessary for cleaning."
+        },
+        "scene_description": "On a white table, there are two objects: a blue sponge on the left and an orange juice bottle on the right. The sponge is upright, while the bottle is standing vertically.",
+        "task_evaluation": "To clean spilled orange juice, the sponge is the appropriate object. It can absorb liquid effectively. The best part of the sponge to grasp would be the side or top, allowing the gripper to compress the sponge for optimal absorption.",
+        "experiment_number": 19
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The Green grasp is positioned near the sponge, which is not the object needed to fulfill the task of handing a drink. Therefore, this grasp is unsuitable.",
+            "Red": "The Red grasp is aligned with the bottle. It encircles the neck area, providing a secure grip. This grasp position is suitable as it allows for easy lifting and handing over.",
+            "Blue": "The Blue grasp is also near the bottle, but it is slightly lower and might not provide as secure a grip on the narrow neck. It is less optimal compared to the Red grasp."
+        },
+        "scene_description": "On the table, there are two objects: a bottle of orange juice on the right and a sponge on the left. The bottle is upright with a circular top. The sponge is rectangular and positioned vertically beside the bottle.",
+        "task_evaluation": "The task requires handing a drink, which is the bottle of orange juice. The grasp should ideally be around the body of the bottle to securely lift it and hand it over.",
+        "experiment_number": 19
+    },
+    {
+        "task": "I spilled orange juice, help me clean it",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned directly over the sponge, allowing for an optimal grip. The orientation and position align well with the task of cleaning up liquid, making it the most suitable option.",
+            "Red": "The Red grasp is positioned over the orange juice bottle. This grasp position is not suitable for cleaning as it targets the bottle, which is not absorbent.",
+            "Blue": "The Blue grasp is also over the orange juice bottle. Like the Red grasp, it does not serve the cleaning task effectively.",
+            "Black": "The Black grasp aligns with the orange juice bottle's cap area. It is not pertinent to cleaning up a spill.",
+            "White": "The White grasp is similarly ineffective for the task, as it focuses on the bottle, not on an absorbent material like the sponge."
+        },
+        "scene_description": "The scene depicts a smooth white surface with two distinct objects: a blue cleaning sponge on the left and an orange juice bottle on the right. The sponge is vertically oriented with respect to the surface, while the juice bottle stands upright. Five color-coded grasp positions are marked: Green near the sponge, and Red, Blue, Black, and White near the bottle.",
+        "task_evaluation": "The task is to clean spilled orange juice. The blue cleaning sponge is the most suitable object for this task due to its absorbent properties. To effectively use the sponge, it should be grasped at its middle section, where the gripper can secure a firm hold without compressing it too much, ensuring maximum surface contact.",
+        "experiment_number": 20
+    },
+    {
+        "task": "I am thirsty, hand me a drink",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The green grasp is positioned above the sponge, making it unsuitable for the drink task.",
+            "Red": "The red grasp is above the juice bottle. It aligns well with the bottle's center, making it a good candidate for a secure grip.",
+            "Blue": "The blue grasp is also above the juice bottle, similar to the red grasp, but it appears slightly off-center compared to the red grasp.",
+            "Black": "The black marker is not present in the scene, so it's not an option.",
+            "White": "The white marker is not present in the scene, so it's not an option."
+        },
+        "scene_description": "The scene displays a white table with two main objects. On the left, there is a turquoise sponge standing upright. To the right is a bottle of juice with an orange liquid and a green cap. There are colored grasp markers indicating potential grasp positions above each object.",
+        "task_evaluation": "The task is to grab a drink. The bottle of juice is the suitable object for this task. The appropriate grasp would be around the body of the bottle for secure handling and to ensure the cap is accessible for opening.",
+        "experiment_number": 20
+    }
+]

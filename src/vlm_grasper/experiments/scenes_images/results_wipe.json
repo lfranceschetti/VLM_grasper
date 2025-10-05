@@ -1,0 +1,262 @@
+[
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned at the base of the handle. This grasp allows for easy maneuvering of the brush across the table, aligning well with the handle orientation for effective use.",
+      "Red": "The Red grasp is positioned near the middle of the brush. Grasping here could obstruct the bristles and prevent effective contact with the table, making it less ideal for cleaning.",
+      "Blue": "The Blue grasp is at a diagonal angle on the brush. This grasp is not well-aligned with the handle, providing less control over the brush's movement.",
+      "Black": "The Black grasp is at the handle end but closer to the bristles. While it allows for some maneuverability, it is less optimal compared to Green due to its proximity to the bristles."
+    },
+    "scene_description": "The table has a single object, a wooden brush, lying on its bristle side. The brush is positioned with the handle on the left side and the bristles touching the table surface. The brush is oriented diagonally from the top-right to the bottom-left corner of the image.",
+    "task_evaluation": "To clean the table, the brush needs to make contact with its bristles. Ideally, the grasp should allow for easy manipulation of the brush along the table surface, utilizing the handle. Grasping from the top of the handle would allow effective control, ensuring the table is cleaned without damaging the brush or getting the robot arm dirty.",
+    "experiment_number": 1
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp aligns well with the side of the handle, allowing a secure grip that can facilitate horizontal sweeping motions without obstructing the brush's intended orientation.",
+      "Red": "The Red grasp is positioned near the edge of the handle; however, its angle might not provide the best stability and could risk slipping during use.",
+      "Blue": "The Blue grasp is positioned at the bottom side, which could make holding the brush for sweeping less practical and might interfere with the base where the bristles meet the handle.",
+      "Black": "The Black grasp appears to be slightly above the center of the handle, but may not align perfectly for a side grasp, making it less optimal compared to the Green grasp that provides more stability."
+    },
+    "scene_description": "The table contains a single wooden brush lying flat with its bristles facing down against the surface. The brush handle is positioned parallel to one edge of the table, with the length of the handle extending towards the opposite edge. The bristles are oriented downward and slightly angled to the right of where the handle's top surface is visible.",
+    "task_evaluation": "To clean the table, the brush needs to be grasped securely by its handle. The handle can be approached from above or the side, depending on the orientation. Since the handle is flat and broad at the top, grasping it from above or the side for horizontal movement is suitable. Care should be taken not to grasp the bristles to avoid damage or dislodging.",
+    "experiment_number": 2
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Red",
+    "reasoning": {
+      "Green": "The Green grasp is positioned at the middle of the brush. While it's aligned with the object, grasping the brush body is not ideal for cleaning, as it doesn't provide good leverage and risks getting the bristles dirty.",
+      "Red": "The Red grasp is located near the top of the brush handle. This is an ideal position for grasping as it provides good control over the brush. The vertical approach from above allows for a secure hold without interfering with the bristles.",
+      "Blue": "The Blue grasp is positioned near the bristles of the brush. This is not suitable for the task as it risks contaminating the gripper and does not offer efficient control for cleaning the table.",
+      "Black": "The Black grasp is positioned diagonally across the handle. However, it is slightly off-center, which might compromise grip stability and control during cleaning, although it still offers a handle-centered position."
+    },
+    "scene_description": "The scene consists of a single brush placed on the table. The brush is lying on its side at an angle, with the bristles facing downward to the left and the handle facing upward to the right. The brush's orientation suggests that its length runs diagonally across the table surface.",
+    "task_evaluation": "To clean the table effectively, the brush should be grasped by the handle, which is on the right side of the object. This approach will allow optimal control during the cleaning action without risking the gripper getting dirty or the brush getting damaged. Grasping the handle from above or from the side would be ideal, depending on the available positions.",
+    "experiment_number": 3
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Red",
+    "reasoning": {
+      "Green": "The Green grasp position approaches the brush from underneath, which would interfere with the bristles. It would not be suitable as it could damage the brush or the gripper.",
+      "Red": "The Red grasp position targets the handle from the side. This position is ideal as it allows a secure grip on the handle without interfering with the bristles. It also aligns well with the task of using the brush to clean the table.",
+      "Blue": "The Blue grasp position is also from the side but closer to the bristles, which could risk damaging them during the grasping action. It is less optimal than Red.",
+      "Black": "The Black grasp position approaches from above but toward the front part of the brush. It could work but is less optimal compared to Red for a secure grasp on the handle."
+    },
+    "scene_description": "The scene shows a single brush lying diagonally on a flat table. Its handle is aligned along the direction from the bottom left to the top right. The bristles are facing downward, making contact with the table surface. The brush has a wooden handle and densely packed bristles.",
+    "task_evaluation": "To clean the table efficiently, the brush should be picked up by its handle, allowing the bristles to make contact with the table surface for cleaning. The approach should be from the top, grasping the handle securely to avoid the risk of getting bristles caught in the mechanism.",
+    "experiment_number": 4
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is aligned directly over the handle, providing a top grasp advantage. This is ideal for picking up the brush by the handle without damaging the bristles.",
+      "Red": "The Red grasp is slightly off-center and closer to the bristles. Grasping here could risk contact with the bristles, which is not optimal for maintaining brush integrity.",
+      "Blue": "The Blue grasp aligns more with the bottom edge of the brush, near the bristles. This position could damage the bristles or be unstable for the cleaning task.",
+      "Black": "The Black grasp is not ideally positioned, as it is closer to the bottom side of the handle. This may result in an unsteady grasp and difficulty in lifting or using the brush effectively."
+    },
+    "scene_description": "The table is clear except for a single object, which is a brush laying diagonally across the surface. The brush has a wooden handle and bristles extending outward. The handle is positioned closer to the upper right corner of the table while the bristles extend toward the lower left. The object rests horizontally with its bristle side down, and the handle is facing upward.",
+    "task_evaluation": "To clean the table, the brush needs to be picked up by its handle to avoid any damage to the bristles and maintain the cleaning function. The grasp should be from the top of the handle to ensure stability and accuracy in cleaning.",
+    "experiment_number": 5
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Blue",
+    "reasoning": {
+      "Green": "The Green grasp is positioned above the handle, towards the midsection of the brush. This allows for a stable grasp from the top, making it suitable for controlling the brush during cleaning.",
+      "Red": "The Red grasp is located towards the end of the handle. While it appears viable, it may not provide balance and might lead to instability during cleaning.",
+      "Blue": "The Blue grasp is close to the center of the handle, on the side. This appears optimal for balancing and controlling the brush effectively.",
+      "Black": "The Black grasp is near the bristle end and appears to risk contact with the bristles. This might not be ideal for control or for ensuring cleanliness of the robot arm."
+    },
+    "scene_description": "The scene features a rectangular table with a single object, a cleaning brush, placed roughly in the center. The brush has a wooden handle and bristles facing downward. The handle of the brush is lying diagonally, running from the upper left to the lower right. The brush's bristles are directed towards the surface of the table, indicating that it could potentially be used for cleaning.",
+    "task_evaluation": "To clean the table, the brush needs to be picked up in a way that allows effective use of the bristles against the surface. The most suitable grasp would involve securing the brush's handle from either the top or the sides to control the brush stably and use the bristles effectively. A side or top grasp is the preferred approach as it avoids contact with the bristles and maximizes control.",
+    "experiment_number": 6
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned on the upper left of the handle and allows a secure grip. It aligns well with the task of applying force to clean efficiently.",
+      "Red": "The Red grasp is positioned on the upper right of the handle and also provides a secure grip suitable for cleaning. It offers a similar advantage to the Green grasp.",
+      "Blue": "The Blue grasp is on the bristle side towards the left. Grasping here might deform the bristles, affecting the brush's ability to clean effectively.",
+      "Black": "The Black grasp is on the bristle side towards the right. Similar to the Blue grasp, it risks damaging the bristles, making it less suitable."
+    },
+    "scene_description": "The scene depicts a brush lying on its side on the table. The bristles are facing downwards, and the handle is at the top. The brush is at a slight angle, with the bristle side touching the table surface. There are four marked grasp positions located around the brush: Green on the handle's upper left, Red on the handle\u2019s upper right, Blue on the bristle side towards the left, and Black on the bristle side towards the right.",
+    "task_evaluation": "To clean the table, the brush needs to be grasped securely. The ideal grasp would be on the handle to avoid any interference with the bristles, allowing effective use of the brush without deforming it. A grasp from the top of the handle would be optimal.",
+    "experiment_number": 7
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is directly above the middle of the handle, offering a secure grip that aligns well for using the brush effectively. The orientation allows a side approach which is ideal.",
+      "Red": "The Red grasp is too close to the bristles. This could lead to the gripper getting dirty and it does not align well with the task goal.",
+      "Blue": "The Blue grasp is also partially over the bristles which might not provide a balanced grasp and could risk damaging the bristles.",
+      "Black": "The Black grasp provides a similar but less optimal positioning compared to Green. It is slightly off-center and closer to the bristles but could still be used with care."
+    },
+    "scene_description": "The table contains a single brush lying diagonally with the bristles facing downward. The handle of the brush is on the upper-left side, and the bristles are pointing toward the lower-right. The bristles rest on the table surface, while the handle is slightly elevated due to the tilt.",
+    "task_evaluation": "To clean the table, the brush should ideally be grasped by the handle to allow effective sweeping motion without coming into contact with the bristles. The handle is at the top of the brush and provides a solid grip point. A side approach would prevent the robot from getting dirty or damaged while ensuring the bristles can make proper contact with the surface during use.",
+    "experiment_number": 8
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp approaches from the side and aligns well with the handle of the brush. This position allows secure holding of the brush without risk of damaging the bristles.",
+      "Red": "The Red grasp is from the top and aligns with the center of the brush. However, it risks pressing against the bristles, potentially impeding a secure grasp.",
+      "Blue": "The Blue grasp also approaches from the top, similar to Red, with a risk of contact with the bristles, which could reduce grasp stability.",
+      "Black": "The Black grasp approaches from above and slightly to the side. This position might clip the bristles, offering less stability for cleaning."
+    },
+    "scene_description": "The scene displays a single brush on a table. The brush has bristles that are pointing downward towards the surface. It has a flat back which is oriented at an angle upward and to the right. The brush is placed slightly off-center on the table, and the handle is visible and flat, providing a potential grasping point.",
+    "task_evaluation": "To clean the table, the brush should be manipulated by its handle or its flat back ensuring that the bristles face the table surface. Given its current orientation, the brush could be grasped from the top or side. The best area for grasping is the handle, which is on the top side of the brush.",
+    "experiment_number": 9
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is situated near the handle, offering a good angle to avoid the bristles and grasp the brush in a stable manner from the right side.",
+      "Red": "The Red grasp is too close to the bristles, which risks damaging them or being ineffective in lifting and using the brush.",
+      "Blue": "The Blue grasp is aligned with the central body of the brush, which might be less stable and could involve contact with the bristles, potentially leading to damage.",
+      "Black": "The Black grasp is close to the bristles, similar to Red, risking damage or ineffective grasp for cleaning."
+    },
+    "scene_description": "The table has a single cleaning brush positioned diagonally across the surface. The brush's handle is slightly elevated and angled, with bristles touching the table. The brush is oriented such that when facing it directly, the bristles extend downward and to the left, and the handle is on the right.",
+    "task_evaluation": "To clean the table, the brush needs to be grasped by the handle to effectively use the bristles without damaging them. The handle is the ideal part for grasping, located on the right side of the brush. Approaching from above the handle or from the left side would work well without touching the bristles.",
+    "experiment_number": 10
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Red",
+    "reasoning": {
+      "Green": "The Green grasp is positioned on the side of the brush, providing a good grip on the wooden back. However, it is close to the edge, which might not be stable enough for a secure grasp.",
+      "Red": "The Red grasp is also on the wooden back and seems to be centrally located, providing a balanced and stable approach for lifting the brush without touching the bristles.",
+      "Blue": "The Blue grasp is located towards one of the upper corners of the brush. This might result in an unbalanced grip, posing a risk of tilting.",
+      "Black": "The Black grasp is positioned near the middle of the brush on the wooden back. It appears similar to Red but slightly off-center, which might not be as stable."
+    },
+    "scene_description": "The scene consists of a single object, a brush, lying on a flat surface. The brush has a wooden back and bristles facing downward towards the surface of the table. It is positioned at a slight angle, with one end of the brush elevated slightly compared to the other. The orientation suggests that it is diagonal relative to the observer's point of view.",
+    "task_evaluation": "To clean the table, the brush needs to be picked up by its side, avoiding contact with the bristles, ensuring no damage to the robot or the brush. The optimal grasp would be from either side of the brush's wooden back, where the fingers can securely close around it. Approaching from the top or side would make sense based on the orientation and to avoid the bristles.",
+    "experiment_number": 11
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned to approach the brush from the side, near the wooden handle. This approach allows a secure grip without interfering with the bristles, making it suitable for manipulating the brush effectively.",
+      "Red": "The Red grasp is positioned over the middle of the brush, aligning slightly with the bristles. This may not be ideal as it could interfere with the bristles, making it less effective for cleaning.",
+      "Blue": "The Blue grasp is located toward the end of the brush where bristles are more exposed. Grasping here could damage the bristles and hinder the brush's cleaning capability.",
+      "Black": "The Black grasp is similar to the Red, aligned near the center but slightly shifted. It faces the risk of interfering with the bristles and doesn\u2019t provide an optimal grip on the handle."
+    },
+    "scene_description": "The scene consists of a single object on the table: a brush placed near the center of the table. The brush has a wooden body and bristles extending from one side. The wooden handle of the brush is oriented at a slight angle, with the bristles facing downward and to the left in the image. The object is positioned in such a way that the handle is more accessible from the top or sides.",
+    "task_evaluation": "The object to interact with is a brush. To fulfill the task of cleaning the table, the brush should ideally be grasped by the wooden handle, which is more rigid. Approaching the handle from the top or side would be most effective, allowing the brush's bristles to make contact with the table without the robot's arm getting dirty or damaged.",
+    "experiment_number": 12
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is aligned with the handle of the brush, positioned at the top. This allows for a secure and direct lift without any risk of damaging the brush, maximizing control during cleaning.",
+      "Red": "The Red grasp is aligned near the bristled side of the brush. Grasping here could damage the bristles or might make the lift unstable, reducing the effectiveness of cleaning.",
+      "Blue": "The Blue grasp appears side-oriented and could potentially grasp part of the handle; however, it might not be as secure due to the angle, making handling less effective.",
+      "Black": "The Black grasp is close to the handle but slightly off. It is less optimal compared to Green due to its proximity to the bristles, which might cause instability."
+    },
+    "scene_description": "The scene features a single wooden brush lying on a table. The brush has bristles on one side and appears to have a slightly curved handle for gripping. It is oriented diagonally on the table with the bristles facing downward, lying flat on the table surface. The handle, which is suitable for grasping, is visible and accessible.",
+    "task_evaluation": "The task is to clean the table. The brush is well-suited for this task given its bristles. The most effective way to grasp the brush would be around its handle, which is positioned at the top when considering the brush's current orientation. This offers a secure grip and allows effective use of the brush's bristles for cleaning.",
+    "experiment_number": 13
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is approaching from the side of the handle. This position allows the gripper to close around the wooden handle securely, making it suitable for lifting and using the brush. It's a good option because it avoids contact with the bristles.",
+      "Red": "The Red grasp approaches perpendicularly to one of the ends of the handle. It might provide a secure grip, but it risks uneven pressure on the handle, especially if the handle is gripped near its edge.",
+      "Blue": "The Blue grasp approaches from the top of the handle. This is suitable as it allows for an even distribution of grip force across the handle, making it stable for cleaning. However, it may cover a larger area unnecessarily.",
+      "Black": "The Black grasp is near the center of the brush and likely close to the bristles. This could risk damaging the bristles or prevent achieving a firm grip, which is not ideal for cleaning."
+    },
+    "scene_description": "The scene shows a single cleaning brush positioned on the table, lying at an angle. The brush has bristles on one side and a wooden handle on the other. It is slightly tilted so that the bristles are close to the table surface, and the handle is elevated. The brush's top part is the flat wooden handle which is slightly elevated and the bottom part is the bristled side in contact with the table.",
+    "task_evaluation": "To clean the table, the brush should be grasped by the wooden handle. This allows for effective use of the bristles to sweep across the table surface. The handle is best approached from the sides or top where a firm grip can be applied without damaging the bristles or the handle.",
+    "experiment_number": 14
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned near the brush handle, which is ideal for picking it up securely. The alignment allows an approach from above, which matches the task requirements.",
+      "Red": "The Red grasp is closer to the bristles. Picking up the brush from this point could damage the bristles and is less ideal for the cleaning task.",
+      "Blue": "The Blue grasp is also aligned with the handle, providing a good approach from above. This positioning would secure the handle without touching the bristles.",
+      "Black": "The Black grasp is positioned near the middle of the brush, away from both the handle and the bristles, making it less suitable as it doesn't provide the optimal leverage or grip needed for cleaning."
+    },
+    "scene_description": "The scene depicts a single cleaning brush lying bristle-side down on the table. The handle of the brush is oriented diagonally across the table, with the handle at the top and bristles at the bottom relative to the image perspective. The brush is positioned towards the center of the table, with a slight tilt.",
+    "task_evaluation": "To fulfill the goal of cleaning the table, the brush should be picked up by the handle to avoid contact with the bristles, which might compromise cleanliness or damage the bristles. The best grasping approach would be from the top of the handle to ensure secure handling, keeping the robot and the brush clean and undamaged.",
+    "experiment_number": 15
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "This grasp is positioned near the center of the brush handle, offering a direct approach to lift and maneuver the brush efficiently without colliding with the table or bristles. It's well-aligned with the task of cleaning.",
+      "Red": "The Red grasp is closer to the bristle side, making it less ideal as it might cause the bristles to make unintended contact with the table during gripping, potentially damaging them or misaligning the brush.",
+      "Blue": "The Blue grasp is located near the end of the handle, which is less optimal for control and application of force during cleaning. The angle is not ideal for maintaining the necessary pressure on the table surface.",
+      "Black": "The Black grasp is at the top edge of the handle. While it provides a high leverage point, it might make the handling awkward due to its position and potential imbalance, reducing cleaning efficiency."
+    },
+    "scene_description": "The scene consists of a single brush lying on the table. The brush is oriented diagonally, with its bristles pointing downward and to the right. The handle is on the left side, slightly elevated. The table is clean save for this one object, and the surface on which the brush rests is flat and even.",
+    "task_evaluation": "The task is to clean the table using the brush. The most appropriate part of the brush to grasp is near the middle of the handle, which allows for optimal control. Grasping the brush from the top or slightly above the handle ensures the bristles face the table surface properly for cleaning.",
+    "experiment_number": 16
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp position aligns with the handle from the side, offering a good angle for gripping the handle securely. This alignment supports effective operation of the brush for cleaning.",
+      "Red": "The Red grasp is near the bristles, which could lead to damage or ineffective use. This position is less favorable as it does not support optimal grip for cleaning with the brush.",
+      "Blue": "The Blue grasp is also close to the bristles and similarly risks damaging the object or impairing the cleaning action. It does not provide a secure grip on the handle.",
+      "Black": "The Black grasp position is aligned on the opposite side of the handle compared to Green. While plausible, it does not offer as clear an approach as the Green grasp for securing the handle effectively."
+    },
+    "scene_description": "The table has a single object positioned towards the center. The object is a cleaning brush with bristles facing downwards. It is lying with its handle up and at an angle, resting diagonally across the table. The brush handle is on the higher side while the bristles are making contact with the table surface.",
+    "task_evaluation": "The goal is to clean the table, which requires grasping the brush by the handle. Grasping it from the top of the handle ensures effective use and avoids damage to the bristles. The handle should be approached from the side, allowing for a secure grip that facilitates the cleaning action without causing any damage.",
+    "experiment_number": 17
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned near the handle of the brush, allowing a direct approach from the top. This is ideal for controlling the brush without damaging the bristles and aligns well with the task requirements.",
+      "Red": "The Red grasp is positioned near the middle of the brush, which might interfere with the bristles if the robot does not approach accurately. This could lead to inefficient use for cleaning the table.",
+      "Blue": "The Blue grasp is located near the bottom of the brush, focusing on the bristles. Approaching from this angle is likely to damage or obstruct the bristles, making it unsuitable for cleaning purposes.",
+      "Black": "The Black grasp is positioned at the top end of the brush handle but seems less aligned with a direct top-down approach. It requires more precision to avoid contact with the surface."
+    },
+    "scene_description": "The table has a single object, a brush with bristles. The brush is oriented with the handle side slightly elevated at the top, while the bristles are facing toward the table, angled slightly to the right. The handle of the brush is positioned to the left, and the bristles are closer to the surface of the table, indicating the brush is resting at an angle.",
+    "task_evaluation": "To clean the table, the most effective way would be to grasp the handle of the brush from the top. This allows the bristles to make full contact with the table surface without damaging the bristles or the robot. Approaching from the top allows a secure grasp of the handle, maximizing control over the brush for cleaning.",
+    "experiment_number": 18
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned along the length of the handle, making it suitable for picking up the brush from the top. This orientation ensures the bristles face downward, ready for cleaning. It also aligns well with the handle's shape, ensuring a secure grip.",
+      "Red": "The Red grasp appears to approach the side of the handle, which might not be as secure as the Green grasp due to the angle of approach. It could lead to an unstable grip during the cleaning process.",
+      "Blue": "The Blue grasp is positioned opposite to the bristles, similar to Green, but seems to be at a more awkward angle relative to the handle's orientation. It may potentially lead to slipping if the grip is not secure.",
+      "Black": "The Black grasp is parallel to the handle and positioned centrally, providing a good potential grip, but the approach angle may lead to challenges in securely lifting the brush without tilting it, thus not as optimal as the Green grasp."
+    },
+    "scene_description": "The scene depicts a cleaning brush lying on a flat surface (the table), with its bristle side facing down onto the table and the wooden handle facing upward. The brush is oriented diagonally from the bottom-left to the top-right of the image, making an angle in relation to the edges of the table. The four potential grasp positions are visible over the handle: Green, Red, Blue, and Black, each indicated with a 'T' shape showing the approach direction of the gripper's fingers.",
+    "task_evaluation": "The task is to clean the table, which can be accomplished by picking up the brush via its handle to use the bristles. Grasping the handle from the top would be ideal, as this allows the bristles to be oriented downward for effective cleaning without the object or the robot getting damaged or dirty.",
+    "experiment_number": 19
+  },
+  {
+    "task": "Clean the table",
+    "best_grasp_position": "Red",
+    "reasoning": {
+      "Green": "The Green grasp is positioned to the side of the brush handle. This positioning might not provide optimal control or balance for cleaning since it's not centered and could cause the brush to tilt.",
+      "Red": "The Red grasp occurs at the middle of the handle, providing a balanced hold. This position allows for easy maneuvering of the brush across the table surface for effective cleaning.",
+      "Blue": "The Blue grasp is positioned slightly above the Red grasp but remains fairly central on the handle. This offers similarly good control but is slightly less optimal than Red as it might be less balanced.",
+      "Black": "The Black grasp is at the far end of the handle, which could lead to instability while using the brush. It\u2019s less suited for controlled cleaning movements due to the imbalance it may cause."
+    },
+    "scene_description": "The scene shows a single object on the table, a brush with bristles facing downward. The handle of the brush is oriented diagonally from the top left to the bottom right of the image. The bristles are located at the bottom part of the object and are directed towards the table surface.",
+    "task_evaluation": "The task is to clean the table, suggesting the brush should be picked up in a way that allows its bristles to make contact with the table surface. A suitable approach would involve grasping the top part of the brush's handle, ideally toward the center to balance the brush and allow effective control during cleaning. The grasp should avoid the bristles to prevent damage and maintain effectiveness.",
+    "experiment_number": 20
+  }
+]

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Step 1: Launch the robot and move to initial position -->
+
+  <!-- Include the initial demo Gazebo launch -->
+  <group>
+    <include file="$(find panda_moveit_config)/launch/demo_gazebo.launch">
+    </include>
+  </group>
+
+  <!-- Node to set the robot to its initial position -->
+  <node name="set_robot_position" pkg="vlm_grasper" type="set_robot_position.py" output="screen">
+    <!-- Ensure this node finishes before moving on -->
+  </node>
+
+  <!-- Step 2: After the robot has moved, launch the remaining nodes -->
+
+  <!-- A delay to ensure the robot reaches the initial position -->
+  <node pkg="roslaunch" type="roslaunch" name="wait_for_robot_position" args="--wait 5.0">
+    <rosparam param="/robot_moved">true</rosparam>
+  </node>
+
+
+  <!-- Parameter for transform cache wait time -->
+  <param name="robot_description_planning/shape_transform_cache_lookup_wait_time" value="0.5" />
+
+  <!-- Static transform publishers -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="to_panda" args="0 0 0 0 0 0 world panda_link0" />
+  <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="to_camera" args="-0.21254 -7.8297e-05 0.91285 -0.622 0.63528 -0.3202 0.32712 world camera_color_optical_frame" /> -->
+
+
+
+
+</launch>

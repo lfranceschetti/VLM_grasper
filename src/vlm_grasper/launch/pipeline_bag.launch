@@ -1,0 +1,40 @@
+<launch>
+
+
+
+
+    <rosparam file="$(find vlm_grasper)/config/experiments.yaml" command="load"/>
+
+
+
+    <!-- Bag publisher node -->
+    <node name="bag_publisher" pkg="vlm_grasper" type="bag_publisher.py" output="screen">
+    </node>
+
+
+    <!-- Start the pointcloud_creator.py node -->
+    <!-- <node pkg="vlm_grasper" type="pointcloud_creator.py" name="pointcloud_creator" output="screen" /> -->
+    <node pkg="vlm_grasper" type="experiment_manager.py" name="experiment_manager" output="screen" />
+
+    
+
+    <!-- Start the pointcloud_transformer.py node -->
+    <node pkg="vlm_grasper" type="pointcloud_transformer.py" name="pointcloud_transformer" output="screen" />
+
+    <node pkg="vlm_grasper" type="tf_broadcaster.py" name="tf_broadcaster" output="screen" />
+
+
+    <node pkg="vlm_grasper" type="edge_grasp.py" name="edge_grasp" output="screen" />
+
+    <node pkg="vlm_grasper" type="grasp_simulator.py" name="grasp_simulator" output="screen" />
+
+
+    <node pkg="vlm_grasper" type="grasp_image_renderer.py" name="grasp_image_renderer" output="screen" />
+
+    <node pkg="vlm_grasper" type="vlm_querier.py" name="vlm_querier" output="screen" /> 
+
+    <node pkg="vlm_grasper" type="task_publisher.py" name="task_publisher" output="screen" />
+
+
+
+</launch>

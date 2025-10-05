@@ -1,0 +1,10 @@
+scene: two_veggies
+number_of_objects: 2
+voxel_downsampling: 0.0065
+max_distance_points: 1.4
+number_of_grasps: 4
+score_threshold: 0.1
+ransac_threshold: 0.007
+tasks:
+  - "I need more vitamin A. Help me"
+  - "Hand me the green veggie"

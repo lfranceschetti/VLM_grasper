@@ -1,0 +1,8 @@
+scene: paper
+number_of_objects: 1
+voxel_downsampling: 0.0065
+max_distance_points: 1.4
+number_of_grasps: 3
+score_threshold: 0.1
+tasks:
+  - "Pick up all the papers. They are loose, keep them from scattering"

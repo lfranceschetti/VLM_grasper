@@ -1,0 +1,9 @@
+scene: chocolates
+number_of_objects: 2
+voxel_downsampling: 0.0065
+max_distance_points: 1.4
+number_of_grasps: 5
+score_threshold: 0.9
+tasks:
+  - "Hand me the milkchocolate"
+  - "Hand me the healthier option"

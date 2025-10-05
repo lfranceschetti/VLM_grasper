@@ -1,0 +1,86 @@
+# General Patterns
+##################
+
+# Ignore Python compiled files
+*.pyc
+__pycache__/
+*.egg-info/
+
+# Ignore VSCode configuration files
+.vscode/
+
+.catkin_tools/
+
+# Ignore environment directories
+venv/
+env/
+
+# Ignore build artifacts
+build/
+devel/
+build_isolated/
+install_isolated/
+dist/
+install/
+
+# Ignore log files
+/logs/
+log/
+
+# Ignore compiled binaries
+bin/
+lib/
+
+franka_ros/
+ 
+
+# ROS Specific Patterns
+#######################
+
+# Ignore all bag files in the project except the sponge_juice.bag
+*.bag
+#!sponge_juice.bag
+
+
+# Ignore URDF files
+*.urdf
+
+# Ignore ROS-generated files
+build/
+devel/
+log/
+install/
+
+
+
+archive/
+
+# NerfStudio Specific Patterns
+##############################
+
+# Ignore Nerf models
+outputs/
+
+# Ignore Nerf exports
+exports/
+
+processed/
+
+
+
+
+# Ignore Nerf data
+data/
+
+*.png
+!pipeline.png
+
+*.pcd
+
+*.bin
+
+*.npy
+
+*.ply
+
+*.pth

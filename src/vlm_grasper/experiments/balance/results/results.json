@@ -1,0 +1,295 @@
+[
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque. The salt is heavy.",
+    "best_grasp_position": "White",
+    "reasoning": {
+      "Green": "The Green grasp is on the far right side of the cutting board. Grasping here is far from the center of mass and would result in increased torque due to the off-center weight of the salt.",
+      "Blue": "The Blue grasp is located near the top edge and slightly to the left of the cutting board's center. This position is quite close to the handle and near the salt, which may offer a better balance and reduced torque.",
+      "Red": "The Red grasp is on the left edge of the board, also away from the salt's center. This position would generate significant torque as it is far from the center of mass.",
+      "Black": "The Black grasp is positioned more centrally along the top edge and somewhat aligned with the center of mass when considering the salt. This offers a more stable option with relatively low torque.",
+      "White": "The White grasp is located near the middle top edge, fairly close to the salt. It is slightly right of center, making it potentially effective for reducing torque by being near the weighted salt box."
+    },
+    "scene_description": "The scene shows a wooden cutting board placed on a table. There is a box of salt positioned in the middle of the cutting board. The cutting board has a handle hole on the far side, opposite the viewer. The salt box appears heavy and is centrally located on the board.",
+    "task_evaluation": "The task is to pick up the cutting board while minimizing torque. The box of salt's weight is a key factor, suggesting that grasping closer to the salt or near the center of mass is crucial to minimizing torque."
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Black",
+    "reasoning": {
+      "Green": "The Green grasp is located at the bottom left corner of the cutting board. Grasping here may cause more torque because of the distance from the center.",
+      "Red": "The Red grasp is at the top right corner. Similar to the Green, it may lead to increased torque because it is positioned near the edge.",
+      "Blue": "The Blue grasp is at the top left corner. This position also presents a similar disadvantage as Green and Red, contributing to torque that isn't optimal.",
+      "Black": "The Black grasp, located mid-left, is more centered vertically. It offers a better position for minimizing torque as it is closer to the board's center of mass.",
+      "White": "The White grasp is on the mid-right side. It is similar to the Black grasp in reducing torque, being closer to the center than the other options."
+    },
+    "scene_description": "The scene consists of a wooden cutting board placed horizontally on a table. A box is located near the center of the cutting board. The cutting board has a rectangular shape with natural wood grain patterns. It appears to be relatively flat, with the longer side parallel to the viewer. The box is a small, rectangular object colored predominantly in blue, with some text on top.",
+    "task_evaluation": "The goal is to pick up the cutting board, minimizing torque. The best grasp would be near the center to balance the load. In terms of approach, picking the board from either side (left or right) would minimize torque and avoid any damage to the board or getting the robot arm dirty.",
+    "experiment_number": 1
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Black",
+    "reasoning": {
+      "Green": "The green grasp is positioned close to the right edge of the cutting board, which may introduce unnecessary torque and imbalance when lifting, as it is far from the center of gravity.",
+      "Red": "The red grasp is near the lower left edge of the board. Grasping here would likely result in torque and instability, as it is located far from the center.",
+      "Blue": "The blue grasp is positioned towards the top left side of the board, near the handle. This is advantageous because it's possible to grasp more centrally, especially with the handle aiding in lifting, minimizing torque.",
+      "Black": "The black grasp is located near the top left and is the closest to the board\u2019s central horizontal axis. This would minimize torque when lifting, making it a suitable option.",
+      "White": "The white grasp is placed close to the right edge, similar to the green grasp, and would likely introduce torque, being far from the board's center."
+    },
+    "scene_description": "The scene consists of a table on which a wooden cutting board is placed horizontally. Positioned on top of the cutting board is a blue and red box. The cutting board has a rectangular shape with grain patterns visible, running along its length, and a handle at the top. The handle is aligned with the board's longitudinal direction and is located near the upper left area of the board as seen from the current viewpoint.",
+    "task_evaluation": "The task requires lifting the cutting board in a way that minimizes torque. To achieve this, the grasp should be as close to the board\u2019s center of gravity as possible. The cutting board should ideally be grasped at the center or near its middle region from the sides to evenly distribute weight during the lift.",
+    "experiment_number": 2
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Red",
+    "reasoning": {
+      "Green": "The green grasp is located near the top right corner of the cutting board. This position is suboptimal for minimal torque as it is too far from the board's center.",
+      "Red": "The red grasp is positioned along the right edge, midway down the board. This location offers a more central grip compared to the others, reducing torque and maintaining balance.",
+      "Blue": "The blue grasp is situated near the top left corner, similar to the green grasp, and is also not ideal for minimal torque due to its distance from the center.",
+      "Black": "The black grasp is placed near the top right corner. It is not optimal for reducing torque as it is away from the center.",
+      "White": "The white grasp is at the top end of the board, aligned with the handle slot. While it could be effective if the board must be moved lengthwise, it does not minimize torque effectively compared to more central positions."
+    },
+    "scene_description": "The scene depicts a wooden cutting board placed on a table with its longer side aligned horizontally. On top of the cutting board, there is a box of table salt placed near its center. The board has a noticeable handle slot on the far end from the viewer's perspective, suggesting the intended orientation for carrying or moving it.",
+    "task_evaluation": "The task is to pick up the cutting board while minimizing torque. The optimal grasp position should be near the center of the board to maintain balance and reduce torque. The board should be grasped from its sides for better control and to minimize torque. The handle slot at the far end may be a suitable grasp point if accessible, or the center of the side edges near the top of the board.",
+    "experiment_number": 3
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Black",
+    "reasoning": {
+      "Green": "The Green grasp is positioned at the top right edge of the board near the handle. This position is close to the center of mass in the horizontal axis and allows grasping from the top, which aligns with minimizing torque.",
+      "Red": "The Red grasp is located at the bottom left corner. Grasping here would create more torque due to its distance from the center of mass, making it less suitable.",
+      "Blue": "The Blue grasp is on the bottom right side of the board. Similar to Red, it is far from the center of mass and would increase torque.",
+      "Black": "The Black grasp is positioned at the top left edge near the handle. This position is advantageous as it is close to the center and allows for a top-down grasp, effectively minimizing torque.",
+      "White": "The White grasp is placed on the middle right edge. While it is closer to the middle than Red and Blue, it still would not be as effective as the Green or Black positions near the handle for minimizing torque."
+    },
+    "scene_description": "The scene depicts a wooden cutting board placed on a table. The board is rectangular with a handle on one side. There is a small box placed on top of the cutting board toward the bottom half. Several colored grasp positions (Green, Red, Blue, Black, White) are depicted along the edges of the cutting board, indicating potential grasp points.",
+    "task_evaluation": "The task is to pick up the cutting board while minimizing torque. To achieve this, it\u2019s ideal to grasp the board at its center of mass, which is likely near the middle of the board. The handle, which is located at the top of the board, offers a convenient grasping point that minimizes the distance to the center of mass along the vertical axis, minimizing torque. The robot should approach the handle directly from the top.",
+    "experiment_number": 4
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "White",
+    "reasoning": {
+      "Green": "The Green grasp is positioned at the top right edge. Grasping here could introduce torque as it is far from the center. Also, the box's position needs careful handling to avoid tilting.",
+      "Red": "The Red grasp is positioned at the bottom left. This position also increases torque due to its distance from the cutting board's center. Care is needed to balance the box.",
+      "Blue": "The Blue grasp is positioned at the bottom right. Similar to the Red grasp, torque issues arise due to attaching close to a corner and the box's weight distribution.",
+      "Black": "The Black grasp is placed at the top left edge. Given its offset from the center, this could lead to torque issues similar to the Green grasp. It's not ideal for minimizing torque.",
+      "White": "The White grasp is centered closer to the right side. While not entirely central, it's the best option available for grasping along a side, closer to the middle region and providing better balance with reduced torque."
+    },
+    "scene_description": "The scene features a rectangular wooden cutting board placed on a white table. It has a small rectangular hole near the top edge which is likely for handling. On the cutting board, there is a blue box, centrally positioned. The cutting board's grain runs vertically from the top to the bottom. The board's longer sides run left to right, and the shorter sides run top to bottom. Grasp indicators are positioned around the cutting board, each marked by a different color: Black at the top left, Green at the top right, White at the center right, Blue at the bottom right, and Red at the bottom left.",
+    "task_evaluation": "The goal is to pick up the cutting board while minimizing torque. This means a central, stable lift is ideal. The optimal grasp point should be close to the center of mass, but with the blue box in place, lifting from underneath it could produce imbalance and increase torque. The best approach would likely be grasping near the board's center or sides while ensuring the box remains stable.",
+    "experiment_number": 5
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned on the right edge, closer to the center of the cutting board. This position can minimize torque as it's close to the center of gravity.",
+      "Red": "The Red grasp is on the lower left side of the cutting board. Grasping here would create a torque due to the distance from the center of mass.",
+      "Blue": "The Blue grasp is on the upper left side near the handle. Grasping close to the handle may increase torque if not balanced by the weight of the board.",
+      "Black": "The Black grasp is positioned on the right side, but further towards the top. This could create unnecessary torque due to its distance from the center.",
+      "White": "The White grasp is positioned on the left side, slightly below center. While not ideal, it is closer to the center compared to the Red grasp, reducing torque."
+    },
+    "scene_description": "The scene depicts a wooden cutting board placed on a table. On top of the cutting board, there is a box positioned slightly off-center. The cutting board has a handle cut-out at the top, indicating its orientation with the handle away from the viewer. The board appears to be flat and rectangular.",
+    "task_evaluation": "The goal is to pick up the cutting board while minimizing torque. The cutting board should be grasped near its center of mass to accomplish this. An appropriate approach would be from the sides or ends, close to the center.",
+    "experiment_number": 6
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is near the top edge by the handle, which could provide good leverage and reduce torque. It is close to the center of mass. The approach from the top is suitable as well.",
+      "Red": "The Red grasp is on the right edge, further from the center. This position might increase torque and is less ideal. Approaching from the side could lead to imbalance.",
+      "Blue": "The Blue grasp is located at the bottom edge, potentially further from the center of mass, which could enhance torque. It is less recommended for minimizing torque.",
+      "Black": "The Black grasp is on the left edge, nearing the center. It might minimize torque but is not as central as the Green grasp. An approach from the side here is better but not optimal.",
+      "White": "The White grasp is also on the lower left and near the center. Like the Black grasp, it is reasonable but not as optimal as the Green grasp for minimizing torque."
+    },
+    "scene_description": "The scene depicts a wooden cutting board placed horizontally on a table. It is rectangular in shape and has a box placed approximately in the center, slightly skewed to the right. The cutting board has a handle at the top edge. The grasp positions are marked with different colors at varying locations: Green at the top edge near the handle, Red on the right edge, Blue on the bottom edge, Black on the left edge, and White also on the lower left edge.",
+    "task_evaluation": "The task is to pick up the cutting board while minimizing torque. The optimal grasp would be near the center of mass. Given the cutting board's orientation, it would be ideal to grasp it either from the edges closer to the center or at the center itself. To avoid torque, gripping the middle near the handle could be beneficial.",
+    "experiment_number": 7
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is located towards the lower right side of the cutting board. This grasp is close to the middle of the short side and can provide good balance while lifting, thus minimizing torque.",
+      "Red": "The Red grasp is positioned on the top left corner of the board. Picking up the board from here may cause more torque, especially as the board's weight will be unevenly distributed.",
+      "Blue": "The Blue grasp is near the upper left part of the cutting board. Similar to Red, this position is too off-center, likely increasing torque and instability during the lift.",
+      "Black": "The Black grasp is on the right center side of the board which is a bit far from geometric center. It might create less torque than the corner grasps but not as optimal as Green.",
+      "White": "The White grasp is directly beside the Green grasp on the lower right part and close to the center of the board, minimizing torque effectively."
+    },
+    "scene_description": "The scene depicts a wooden cutting board placed on a table. The cutting board has a rectangular shape and appears to have some grains and variations in color. There is a package of table salt placed towards the center of the cutting board. The cutting board is oriented with its longer sides running left to right in the image, and its shorter sides running top to bottom. Near the top edge, there appears to be a handle cutout.",
+    "task_evaluation": "The task is to pick up the cutting board while minimizing torque. To achieve this, gripping the cutting board near its geometric center, especially around its width (short side), will help balance the board during lifting. Ideally, a grasp closer to the center of gravity, considering both the weight of the board and the package on it, will minimize torque. A top approach towards the center, avoiding the handle or edges, would be beneficial to keep the robot arm stable and prevent damage to both the board and the arm.",
+    "experiment_number": 8
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "White",
+    "reasoning": {
+      "Green": "The Green grasp is located at the upper right corner of the cutting board. Grasping here may cause a high torque due to the distance from the board's center of mass.",
+      "Red": "The Red grasp is at the left edge of the board, closer to the bottom left corner. Like the Green grasp, this position is too far from the center, increasing torque.",
+      "Blue": "The Blue grasp is near the top left corner of the board. This grasp position will also lead to increased torque, being far from the center of mass.",
+      "Black": "The Black grasp is at the right side of the board, situated further towards the center than the Green. While slightly better, it still isn't ideal for minimizing torque.",
+      "White": "The White grasp, located near the top middle section of the board, is closest to the center among the options. This position will minimize torque the best, maintaining balance and providing a secure grip."
+    },
+    "scene_description": "The scene features a wooden cutting board placed on a white table. The cutting board has a rectangular shape and lies flat on the table. Positioned in the center of the cutting board is a blue box of table salt with text labeled on it. The table and cutting board together form a stable platform with the cutting board extending lengthwise across the table surface.",
+    "task_evaluation": "The task is to pick up the cutting board while minimizing torque. The most effective approach would be to grasp the board near its center of mass to avoid creating large torque. This would typically be the mid-section or near the handle if it\u2019s centrally positioned, but as the board is rectangular and evenly placed, a side grasp closer to the center on its shorter edges would work best, especially ensuring not to come in contact with or damage the salt box or the board itself.",
+    "experiment_number": 9
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned near the middle of the top. It is close to the handle, which is ideal for minimizing torque. This position is central, making the grip balanced.",
+      "Red": "The Red grasp is on the left side near the handle. While it offers proximity to the handle, the lateral position may introduce some torque due to the off-center grasp.",
+      "Blue": "The Blue grasp is on the right side. It is not ideal for minimizing torque because it is further from the center of mass, increasing rotational force.",
+      "Black": "The Black grasp is on the right middle near the handle. It is a good option but slightly off-center compared to the Green grasp, which might lead to increased torque.",
+      "White": "The White grasp is at the top right corner near the handle. It is suboptimal due to its corner position, which could introduce imbalance and torque."
+    },
+    "scene_description": "The scene features a wooden cutting board placed on a table. The cutting board is rectangular, oriented horizontally with its longer sides aligned with the left and right of the table. On top of the cutting board is a box of table salt, more towards the far end of the board. The cutting board has a handle cut-out at the top. Five potential grasp positions are marked around the board: Red (left side near handle), Green (top middle near handle), Blue (right side), Black (right middle near handle), and White (top right corner near handle).",
+    "task_evaluation": "To minimize the torque, the grasp should ideally be close to the center of mass of the cutting board. Since the board is fairly symmetrical, grasping near the center would fulfill this task. The region close to the handle at the top of the board is optimal for a balanced grasp. Approaching from above, targeting the area near the handle ensures stability and minimizes torque.",
+    "experiment_number": 10
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Black",
+    "reasoning": {
+      "Green": "The green grasp is positioned at the bottom-right side of the cutting board. This placement is closer to the center of the board and will help in minimizing torque, making it suitable for the task.",
+      "Red": "The red grasp is located at the top-right side of the board, near the handle. Grasping here might introduce torque due to the proximity to the edge and may not strike a balance with the center of mass.",
+      "Blue": "The blue grasp is at the bottom-left side. While it is more centralized than the red grasp, it still may not minimize torque as effectively as some other options due to its proximity to the board's corner.",
+      "Black": "The black grasp is situated at the center-right side midway along the side edge of the board. This is a close approach to the center of mass, likely minimizing torque, and is thus quite a suitable option.",
+      "White": "The white grasp is at the top-left corner, near the salt box. Grasping here would introduce significant torque and imbalance, making it the least favorable option, especially given the placement of the additional weight from the salt box."
+    },
+    "scene_description": "The scene consists of a wooden cutting board lying flat on a table. There is a box of table salt situated towards one side of the cutting board, specifically near the top-left corner from the observer's perspective. The cutting board has visible woodgrain and a cutout handle on one end. The table's surface is plain and unobstructed.",
+    "task_evaluation": "The cutting board must be grasped in a way that minimizes torque. The most balanced approach would involve grasping it near its center of gravity, ideally from the sides to avoid tilting or damaging the object. Grasping near its handle might be less stable due to increased torque as the center of mass is more centralized.",
+    "experiment_number": 11
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is on the right edge of the board, towards the center. This position is well-balanced for minimizing torque, as it is close to the center of mass of the cutting board.",
+      "Red": "The Red grasp is located near the handle on the top edge. This would likely induce more torque due to its position far from the center of the board.",
+      "Blue": "The Blue grasp is on the right edge, but it's quite high near the salt box, which might destabilize the load depending on the weight and placement of the salt box.",
+      "Black": "The Black grasp is on the left edge of the board. However, its position near the middle makes it a potential alternative for minimizing torque.",
+      "White": "The White grasp is on the top right edge, distant from the board's center, which would likely increase torque and make the lift less stable."
+    },
+    "scene_description": "The scene depicts a wooden cutting board placed on a white table. The board is rectangular with a handle cutout on one of the short edges. Positioned centrally on the board is a blue box of table salt. The board is oriented lengthwise horizontally, with the handle closer to the top of the image. The salt box is slightly towards the top left central area of the board. Five colored grasp indicators are visible: Green is on the right edge, Red at the top edge near the handle, Blue on the right edge near the salt box, Black on the left edge, and White on the top right edge.",
+    "task_evaluation": "The task is to pick up the cutting board while minimizing torque. The ideal grasp would be centered and along the longer edges to maintain balance. Grasping from the side edges, particularly towards the center, would help in minimizing torque and allow for a stable lift.",
+    "experiment_number": 12
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "White",
+    "reasoning": {
+      "Green": "The Green grasp is positioned toward the top-right corner of the cutting board. Grasping here could create more torque as it is further from the center of mass.",
+      "Red": "The Red grasp is located midway along the left edge of the board. This position is closer to the center of mass, potentially reducing torque during the lift.",
+      "Blue": "The Blue grasp is positioned along the right edge but lower than the center. It offers distance from the central mass, similar to the Red grasp, though slightly further than ideal.",
+      "Black": "The Black grasp is at the top-left corner of the cutting board. Grasping here might increase torque due to its distance from the center.",
+      "White": "The White grasp is positioned slightly to the right of the board's center. This location is near the center of mass, making it the best option for minimal torque."
+    },
+    "scene_description": "The scene features a wooden cutting board placed on a flat white table. The cutting board is rectangular, with its longer side aligned horizontally relative to the observer. A blue box is positioned near the center of the board. The cutting board has a handle slot on the side furthest from the observer.",
+    "task_evaluation": "The cutting board is the target object to be picked up while minimizing torque. The ideal grasp area would be near the center of mass to minimize torque, which appears to be around its central region. Approaching the board from the top or side near its center would be optimal to achieve a balanced lift.",
+    "experiment_number": 13
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Black",
+    "reasoning": {
+      "Green": "The Green grasp is positioned on the right side towards the top end of the board. This position would create more torque because it's farther from the board's center of gravity.",
+      "Red": "The Red grasp is at the front edge towards the bottom end. Grasping here would result in unbalanced torque since it's distant from the center, which could cause the board to rotate.",
+      "Blue": "The Blue grasp is also on the front edge, further to the side, resulting in high torque and instability as it would not be close to the center of gravity.",
+      "Black": "The Black grasp is on the left side, approximately towards the board's middle. This is the most suitable position for minimizing torque, as it is closer to the board's center of gravity, providing a balanced lift.",
+      "White": "The White grasp on the right side near the middle is a viable option but less optimal than Black due to the slight offset caused by the salt box."
+    },
+    "scene_description": "The scene depicts a wooden cutting board lying flat on a table. On top of the cutting board, there is a box of table salt positioned towards one end. The cutting board has a natural wood color with two distinct sections. The board's orientation runs lengthwise along the table. There are five colored markers around the board indicating potential grasp points: Green and White on the right side, Red and Blue on the front edge, and Black on the left side.",
+    "task_evaluation": "To minimize torque when picking up the cutting board, it would be optimal to grasp it near its center of mass, which is typically around the middle. Grasping it from the sides near the middle would likely minimize torque and ensure a balanced lift. The current setup places the salt box towards one end, which slightly offsets the center of gravity towards that end. Therefore, a side grasp near the board's middle is preferred to maintain balance and reduce potential rotation.",
+    "experiment_number": 14
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Red",
+    "reasoning": {
+      "Green": "The Green grasp is on the top left side. It does not align with the board's center of mass and could result in increased torque due to the off-center position, especially since the box is adding weight on the right side.",
+      "Red": "The Red grasp on the right middle is closer to the center line of action of the entire setup. It provides a good balance because it is close to the box and directly counteracts the additional weight on the board.",
+      "Blue": "The Blue grasp on the top right is too high to be near the center of mass, especially with the box's weight below; it may result in additional torque when lifting.",
+      "Black": "The Black grasp on the left middle is partially suitable, but since the box is on the right, it may cause the board to tilt, creating unwanted torque.",
+      "White": "The White grasp on the right side is directly above the center of mass given the box's presence. It may be slightly less optimal than Red, as it does not account for the exact center due to the weight displacement here."
+    },
+    "scene_description": "The scene consists of a wooden cutting board placed horizontally on a white table. A small rectangular box is located on top of the cutting board closer to the right side. The board appears to have a handle on the top edge. The grasps are marked in different colors around the board: Green on the top left, Red on the right middle, Blue on the right top, Black on the left middle, and White slightly to the upper right next to the Red grasp.",
+    "task_evaluation": "To fulfill the task of minimizing torque while picking up the cutting board, it is optimal to grasp near the center of mass. Since the box is on the board, the center is slightly toward the box\u2019s side. A side approach is best to lift the entire board evenly, avoiding any obstacles and minimizing the risk of tilting the object.",
+    "experiment_number": 15
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "Located on the right side towards the middle of the cutting board which is close to the handle opening. Grasping here would be efficient since it aligns well with the board's center of mass, minimizing torque.",
+      "Red": "Located on the left edge of the cutting board. This position is far from the center of mass and would likely increase torque, making it unstable.",
+      "Blue": "Located towards the upper left side. This is somewhat closer to the center but still less optimal than Green because it's more to the side.",
+      "Black": "Located on the right, closer to the center than Red but not as centered as Green. It may work but is not ideal compared to Green.",
+      "White": "Located to the left side. Like Red and Blue, it is too far from the center of mass and would result in increased torque."
+    },
+    "scene_description": "The scene depicts a rectangular wooden cutting board lying flat on a table. It is oriented with the length parallel to the camera with a small handle opening visible at one end. On top of the cutting board, placed centrally, is a blue and white box marked '0.5 kg'.",
+    "task_evaluation": "The task requires picking up the cutting board, minimizing torque. The ideal grasp would be near the center of mass, which is important to reduce torque and ensure stability. Since the box on top is not the target, it can be ignored for this task.",
+    "experiment_number": 16
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The green grasp is positioned near the top edge of the cutting board, close to the handle. This is an optimal position for minimizing torque as it aligns with the approach direction needed to lift the board efficiently.",
+      "Red": "The red grasp is on the left near the middle of the board. While usable, it does not minimize torque effectively as it is too far from the handle and centralizes lifting at the center.",
+      "Blue": "The blue grasp is positioned at the top-left corner of the cutting board. It is not ideal because it does not align directly with the handle, increasing torque during lifting.",
+      "Black": "The black grasp is located on the right side of the cutting board, close to its edge. This position is less effective as it also centralizes lifting at the edge, increasing torque.",
+      "White": "The white grasp is positioned at the bottom-left area of the board. This results in high torque during lifting as it is distant from the handle, making it unsuitable."
+    },
+    "scene_description": "The scene shows a wooden cutting board placed horizontally on a white table. On top of the cutting board, there is a box of salt positioned vertically. The cutting board has a handle on the far side, away from the camera.",
+    "task_evaluation": "The task requires picking up the cutting board while minimizing torque. The best approach would be to grasp near the handle located at the top end of the cutting board. This part offers better leverage and reduces torque during lifting.",
+    "experiment_number": 17
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "None",
+    "reasoning": {
+      "Green": "Green is located at the top-left corner of the cutting board, which could induce higher torque due to its distance from the center of mass.",
+      "Red": "Red is positioned on the right side of the cutting board, closer to one edge than the center. This position might create additional torque, leading to less stability.",
+      "Blue": "Blue is slightly below Red on the right side, potentially offering a slightly more balanced grasp than Red but still not optimal for minimizing torque due to being far from the center.",
+      "Black": "Black is not visible in the image, so cannot be evaluated for suitability.",
+      "White": "White is also not visible in the image, so cannot be evaluated for suitability."
+    },
+    "scene_description": "The scene features a rectangular wooden cutting board placed horizontally on a table. On top of the cutting board, there is a blue and white box labeled with 'TAFELSALZ'. The cutting board has a handle cutout located at the top edge. Five potential grasp positions are marked as follows: Green at the top-left, Red and Blue at the right center, Black and White are not visible in the provided image. The Green grasp is positioned near the top left corner of the cutting board.",
+    "task_evaluation": "The goal is to pick up the cutting board in a way that minimizes torque. The most effective way to achieve this is by grasping near the center of mass, which is near the middle of the board. Approaching from the side of the board horizontally near the center would be ideal for minimizing torque and ensuring stability without the risk of damaging the board or the robot.",
+    "experiment_number": 18
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Black",
+    "reasoning": {
+      "Green": "The Green grasp is positioned at the bottom-left corner of the board. Grasping here would increase torque due to the distance from the center of mass, making it less suitable.",
+      "Red": "The Red grasp is located at the top-right corner. Similar to Green, this position is too far from the center, increasing torque and instability.",
+      "Blue": "The Blue grasp is at the top-left corner, far from the center of mass, leading to higher torque and potential imbalance.",
+      "Black": "The Black grasp is near the middle-left side of the board, closer to the center of mass. This position provides better balance and minimizes torque, making it a suitable choice.",
+      "White": "The White grasp is at the middle-right side of the board, similar to Black in proximity to the center of mass. This provides a balanced grip and minimizes torque effectively."
+    },
+    "scene_description": "The scene features a rectangular wooden cutting board placed on a white table. A small box is situated centrally on the cutting board. The board is oriented with its longer sides parallel to the table's edges. The box is aligned centrally on the board, and the board has a handle at one of the shorter ends. Five possible grasp positions are marked around the board: Green on the bottom-left side, Red on the top-right side, Blue on the top-left side, Black on the middle-left side, and White on the middle-right side.",
+    "task_evaluation": "The task requires picking up the cutting board to minimize torque. The optimal grasp would be near the board's center of mass to reduce torque. Grasping the board centrally from the sides would be ideal to maintain balance and prevent rotation.",
+    "experiment_number": 19
+  },
+  {
+    "task": "Pick up the cutting board in a way that minimizes the torque.",
+    "best_grasp_position": "Red",
+    "reasoning": {
+      "Green": "The Green grasp is near the top-right corner. Grasping here would likely create significant torque due to the asymmetrical position, making it unsuitable for minimizing torque.",
+      "Red": "The Red grasp is at the left center side of the cutting board. This position is more centered compared to others, which helps in balancing and minimizing torque when lifted.",
+      "Blue": "The Blue grasp is at the center of the right side. Similar to the Red grasp, it's positioned centrally, which should help balance the board when lifted and minimize torque.",
+      "Black": "The Black grasp is near the top-left corner, which will likely result in high torque similar to the Green grasp due to its off-center location.",
+      "White": "The White grasp is at the upper right side but closer to the center than the Green. Still, it is not as central as the Red or Blue, making it less optimal for minimizing torque."
+    },
+    "scene_description": "The scene shows a wooden cutting board placed on a white table. The cutting board is rectangular and oriented lengthwise from top to bottom of the image. A box labeled with text is placed near the center of the cutting board. There are five potential grasp positions marked by different colors: Green near the top-right corner, White slightly below the Green at the upper right side, Blue on the right side center, Red on the left side center, and Black near the top-left corner.",
+    "task_evaluation": "The task is to pick up the cutting board, which should be done in a manner that minimizes torque. The cutting board should ideally be grasped from the center or symmetrical positions to balance it properly. Grasping from the center along the sides would provide stability and minimize torque.",
+    "experiment_number": 20
+  }
+]

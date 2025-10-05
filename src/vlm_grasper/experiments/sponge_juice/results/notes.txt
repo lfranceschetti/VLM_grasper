@@ -1,0 +1,2 @@
+"I spilled orange juice, help me clean it": 16/20
+"I am thirsty, hand me a drink": 19/20

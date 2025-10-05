@@ -1,0 +1,260 @@
+[
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned on the side of the toothpaste tube. This position is suitable for gripping the tube and squeezing it to dispense toothpaste. It aligns well with the goal.",
+      "Red": "The Red grasp is targeting the box, which is not necessary for the task of brushing teeth. Thus, it is irrelevant.",
+      "Blue": "The Blue grasp is also targeting the box. Similar to Red, this is irrelevant to the task.",
+      "Black": "The Black grasp is positioned lower on the toothpaste tube. While it can grip the tube, it may not provide the best leverage for squeezing the paste out.",
+      "White": "The White grasp targets the upper side of the toothpaste tube, near the cap. It is an effective position for gripping and squeezing, similar to Green, with perhaps lesser leverage."
+    },
+    "scene_description": "The scene shows a toothpaste tube and a box placed on a table. The toothpaste tube is positioned to the left and is standing vertically with the cap on top. The box, labeled 'BASMATI,' is positioned to the right and is also standing vertically.",
+    "task_evaluation": "To fulfill the task of brushing teeth, the toothpaste tube is needed. The toothpaste should be grasped from the body, ideally from the side, closer to the top near the cap, to facilitate squeezing the paste out.",
+    "experiment_number": 1
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "This grasp is suitable because it aligns with the side of the toothpaste tube. It allows holding the tube securely in the middle, making it easy to manage while squeezing the toothpaste out.",
+      "Red": "The red grasp is oriented towards the box, which is not the object needed for brushing teeth, making it unsuitable.",
+      "Blue": "The blue grasp is positioned towards the top part of the toothpaste tube. Grasping from the top near the cap could make it harder to squeeze out the toothpaste, so it is less ideal.",
+      "Black": "The black grasp is incorrectly oriented, as it targets the cap area of the toothpaste. This position does not provide good control for squeezing the tube.",
+      "White": "This grasp is positioned towards the middle section of the toothpaste tube, similar to the green grasp. It offers good control for squeezing the toothpaste out, making it an appropriate choice."
+    },
+    "scene_description": "The scene consists of a toothpaste tube and a box on a table. The toothpaste tube is upright, located towards the left side of the table. It is positioned vertically with the cap at the top and the squeezed end at the bottom. The box is lying horizontally on its largest face at the right side of the table, with its longer side aligned with the table's edge.",
+    "task_evaluation": "To brush your teeth, the toothpaste tube is the object needed. The ideal way to grasp the tube would be towards the middle or lower part of the tube's body, from the side, allowing easy access to the cap for opening. This position is crucial as it provides stability and control when squeezing the toothpaste out.",
+    "experiment_number": 2
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp position is oriented to grasp the toothpaste from the side, which aligns well with the task of squeezing toothpaste out. The side approach allows a firm grip without obstructing the cap or dispensing end, making it suitable for the task."
+    },
+    "scene_description": "The scene shows a white table with two objects on it. On the left side, there is a tube of toothpaste standing upright with the cap at the top and the dispensing end at the bottom. To the right of the toothpaste is a rectangular box, likely a package of Basmati rice, also standing upright with its smaller sides facing the viewer.",
+    "task_evaluation": "To brush teeth, the toothpaste is the relevant object. It is situated vertically with the cap at the top. The best part to grasp would be the middle section of the tube from the side, providing control for squeezing toothpaste onto a brush.",
+    "experiment_number": 3
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp approaches from the bottom rear of the toothpaste, which is ideal for not squeezing out any toothpaste and maintaining control when picking up.",
+      "Red": "The Red grasp is positioned from the top, which might inadvertently squeeze the tube and is not optimal for maintaining tube orientation.",
+      "Blue": "The Blue grasp approaches from the middle side. Though it offers some control, it risks squeezing toothpaste out and doesn\u2019t provide optimal balance.",
+      "Black": "The Black grasp is at the top front, similar to the Red grasp, and carries the same risk of squeezing and poor orientation."
+    },
+    "scene_description": "The scene depicts a white table with two objects on it. To the left is a toothpaste tube standing upright with a cap at the top. It has some colorful text and a white body. To the right lies a rectangular pink box that appears to be a product packaging. Four grasp positions are marked around the toothpaste tube with different colors: Green, Red, Blue, and Black.",
+    "task_evaluation": "The task is to brush teeth, which requires picking up the toothpaste tube. The optimal grasp would be around the center of the tube near the bottom for a secure grip. The bottom-front or bottom-back side would be ideal to avoid squeezing out any toothpaste.",
+    "experiment_number": 4
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Blue",
+    "reasoning": {
+      "Green": "The Green grasp is positioned on the tube's side, lower down. This is a reasonably stable grasp for picking up the tube, but it might not provide the best control for squeezing the toothpaste out.",
+      "Red": "The Red grasp is closer to the cap of the tube where squeezing does not typically happen, but it will allow easy opening of the cap if required. Suitable for the task.",
+      "Blue": "The Blue grasp is near the middle of the tube, which could be ideal for both picking up and squeezing purposes. Provides a good balance for brushing teeth.",
+      "Black": "The Black grasp is positioned awkwardly near the top back of the tube, which might not provide good handling or control for squeezing and opening the cap.",
+      "White": "The White grasp is on the pink box. The pink box is not relevant for brushing teeth, so this grasp is not suitable at all."
+    },
+    "scene_description": "The table has two objects: a toothpaste tube on the left and a pink box on the right. The toothpaste tube is upright with its cap at the top and label facing forward. The pink box is lying flat with its wider side facing the camera.",
+    "task_evaluation": "To brush my teeth, the toothpaste tube is needed. It's best to grasp it from the center or top near the cap for easy handling and control, allowing the tube to be squeezed as needed. The cap is on the top of the tube.",
+    "experiment_number": 5
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned towards the left side of the toothpaste tube, providing a stable grip without disrupting its upright position. This position allows for easy handling and avoids squeezing the tube inadvertently.",
+      "Red": "The Red grasp is near the middle of the box. This doesn't align with the task of brushing teeth as it targets the wrong object.",
+      "Blue": "The Blue grasp is placed diagonally over the box and doesn't provide any utility for handling the toothpaste. This is unsuitable for the task.",
+      "Black": "The Black grasp is positioned on the left side of the toothpaste tube, similar to the Green grasp. However, it is slightly higher up the tube, risking toppling or unwanted squeezing.",
+      "White": "The White grasp is positioned near the bottom right of the box. This grasp has no relevance to handling the toothpaste tube."
+    },
+    "scene_description": "The scene shows a white table with two main objects positioned on it. On the left, there is a toothpaste tube standing upright with its cap on top and the body slightly slanted to the left. On the right, there is a rectangular box lying flat horizontally with its longer side parallel to the table's edge. The box appears to be a rice packet based on its packaging. Both objects have designated grasp positions around them, marked with different colors.",
+    "task_evaluation": "To fulfill the goal of brushing teeth, the toothpaste tube is the object of interest. The tube should ideally be grasped around its middle section to maintain stability and avoid squeezing out paste unintentionally. The approach can be from the sides or the front, considering it is positioned upright.",
+    "experiment_number": 6
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned at the side and middle of the toothpaste tube, providing a stable grasp without squeezing the tube accidentally.",
+      "Red": "The Red grasp is positioned towards the base of the tube, which is less ideal as it may tilt or topple the tube if not careful.",
+      "Blue": "The Blue grasp is closer to the top, which might disturb the cap or squeeze out toothpaste undesirably.",
+      "Black": "The Black grasp is slightly off-center towards the top, which risks squeezing the tube or toppling it, especially if the weight is unbalanced.",
+      "White": "The White grasp is also near the tube\u2019s midsection, similar to Green, providing a decent grip but less centered than Green."
+    },
+    "scene_description": "The scene features a white table with two objects: a toothpaste tube and a box. The toothpaste tube is oriented vertically, positioned on the left side of the table. The box is situated to the right of the toothpaste, positioned horizontally. Five potential grasp positions are marked near the toothpaste tube, each represented by T-shaped markers in colors Green, Red, Blue, Black, and White.",
+    "task_evaluation": "To fulfill the task of brushing teeth, the toothpaste tube is the relevant object. It needs to be grasped around the middle section to avoid squeezing out the paste prematurely. The most suitable approach is from the side, ensuring a secure grip.",
+    "experiment_number": 7
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "White",
+    "reasoning": {
+      "Green": "The green grasp is positioned on the lower section of the tube, which could provide stability but might make it harder to reach the cap easily. It's not ideal for the task of squeezing out toothpaste.",
+      "Red": "The red grasp is positioned on the box, which is not relevant to the task of brushing teeth. Therefore, it is not suitable for this goal.",
+      "Blue": "The blue grasp is positioned towards the middle of the toothpaste tube, which could allow for efficient handling and squeezing of the tube. This makes it a reasonable choice.",
+      "Black": "The black grasp is positioned on the box, which is again not relevant for the task. Thus, it is unsuitable for grasping the toothpaste tube.",
+      "White": "The white grasp is located near the top of the toothpaste tube, allowing easy access to the cap and enabling proper handling for dispensing toothpaste. This grasp is very suitable for the task."
+    },
+    "scene_description": "The scene features two main objects on a table. On the left, there is a tall, cylindrical toothpaste tube standing vertically with its cap facing upward. On the right, there is a rectangular box laying on its side with its largest face facing upward. The toothpaste tube is closer to the viewer, while the box is positioned behind it towards the back-right of the table.",
+    "task_evaluation": "To fulfill the goal of brushing teeth, the toothpaste tube is the relevant object. The most effective grasp would target the middle or upper section of the tube's body, allowing for easy removal of the cap and dispensing of toothpaste. An approach aligned with the tube's vertical orientation is optimal.",
+    "experiment_number": 8
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned at the middle of the toothpaste tube. This position allows for a stable grasp but may not be ideal for opening the cap or squeezing the tube effectively.",
+      "Red": "The Red grasp is positioned on the top of the box, which is not relevant for this task as it is not a toothpaste tube.",
+      "Blue": "The Blue grasp position is not visible in the image hence cannot be evaluated for this task.",
+      "Black": "The Black grasp is positioned at the side of the pink box. This position is not suitable as it pertains to the box, not the toothpaste.",
+      "White": "The White grasp is located toward the middle of the pink box, which again is not relevant for the toothpaste task."
+    },
+    "scene_description": "The scene features a white table with two main objects. On the left side, there is a tube of toothpaste standing upright with the opening on the top. The toothpaste is positioned vertically. On the right side, there is a rectangular pink box also standing upright, wider than it is deep. The front of the box faces the bottom edge of the image.",
+    "task_evaluation": "To fulfill the goal of brushing teeth, the toothpaste tube is the relevant object. The toothpaste tube should ideally be grasped from the sides, close to the top, to easily open the cap if necessary and squeeze out toothpaste.",
+    "experiment_number": 9
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Red",
+    "reasoning": {
+      "Green": "The green grasp is positioned at the edge of the box, which is not suitable for picking up a toothpaste tube. This grasp does not align with the goal as it targets the box instead.",
+      "Red": "The red grasp is positioned correctly near the middle section of the toothpaste tube, allowing for a stable hold without exerting excessive pressure. This orientation is favorable for picking up the tube in a way that aligns with the intended task of brushing teeth."
+    },
+    "scene_description": "The scene features two main objects on a table. On the left, there is a tube of toothpaste standing vertically with the cap at the top and the base at the bottom. The branding 'Signal XXL' is visible. On the right side of the table is a pink box labeled 'Basmati', which is standing upright with its larger face facing outward.",
+    "task_evaluation": "To fulfill the goal of brushing teeth, the toothpaste tube is necessary. The tube should be grasped around the middle section, ensuring that the grip does not squeeze and expel toothpaste. The grasp would ideally be from the side of the tube.",
+    "experiment_number": 10
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned at the middle side of the toothpaste tube. This position allows for an effective grip that supports the tube's upright orientation. This positioning provides stability and accessibility for unscrewing the cap and dispensing toothpaste, aligning well with the task of brushing teeth."
+    },
+    "scene_description": "On the table, there are two objects. The first object is a toothpaste tube standing upright on its base near the center of the table, and the second object is a box of rice placed horizontally to the right of the toothpaste. The toothpaste tube is vertically oriented, with the cap facing upward and the base on the table surface. The box of rice is oriented lengthwise, with text and design elements visible on its side.",
+    "task_evaluation": "To fulfill the goal of brushing your teeth, the toothpaste tube is necessary. The approach should target the side of the tube to grasp it firmly and unscrew the cap as needed. Given the vertical orientation, grasping from the side closer to the middle or near the top provides stability and eases cap removal.",
+    "experiment_number": 11
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The green grasp is positioned on the side of the toothpaste tube near the top. This position allows a stable grip for opening the cap and dispensing the toothpaste, aligning well with the task objective.",
+      "Red": "The red grasp is not ideally positioned as it's oriented away from the toothpaste tube, targeting the box instead. It doesn't align with the task objective.",
+      "Blue": "The blue grasp targets the side of the box. Since the goal is to use the toothpaste, this grasp does not fit the needs of the task.",
+      "Black": "The black grasp is positioned towards the middle of the toothpaste tube. It could work, but is less optimal compared to the green grasp since it's not as close to the cap.",
+      "White": "The white grasp is positioned on the opposite side of the toothpaste tube. However, it doesn't offer the same stability and ease for dispensing as the green grasp."
+    },
+    "scene_description": "The scene consists of a white table with two main objects on it. On the left, there is a toothpaste tube standing vertically with its cap on top. The label is facing outward. On the right, there is a pink rectangular box standing upright with the top lid visible. The box appears to be labeled 'BASMATI'.",
+    "task_evaluation": "To fulfill the goal of brushing teeth, the toothpaste tube needs to be picked up. The optimal area to grasp the tube is closer to the cap at the top, as it provides balance and ensures that the tube contents can be easily dispensed when upside down. Grasping from the side near the top would be ideal.",
+    "experiment_number": 12
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Blue",
+    "reasoning": {
+      "Green": "The Green grasp is positioned at the top of the toothpaste tube. This grasp could be effective for picking up the tube but might not allow for easy squeezing.",
+      "Red": "The Red grasp is aligned with the rice box on the right and is not suitable for picking up the toothpaste.",
+      "Blue": "The Blue grasp is positioned at the middle of the toothpaste tube, offering a balanced hold that could allow for easy picking up and squeezing to dispense toothpaste.",
+      "Black": "The Black grasp is associated with the rice box, similar to the Red grasp, and is unsuitable for the toothpaste tube.",
+      "White": "The White grasp is positioned low on the toothpaste tube, which might make it harder to control for squeezing purposes since the grasp is too close to the base."
+    },
+    "scene_description": "The scene contains two objects on a table. On the left, there is a toothpaste tube standing vertically with its cap at the top and the tube tapering down to the bottom. On the right, there is a box of rice lying horizontally with its longer side parallel to the left edge of the table.",
+    "task_evaluation": "To fulfill the task of brushing teeth, the toothpaste tube is the relevant object. The optimal grasp position would be around the body of the toothpaste tube, ensuring that it can be easily picked up and squeezed. The approach should be from the side to allow easy manipulation.",
+    "experiment_number": 13
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The green grasp is positioned around the toothpaste tube, providing a secure hold for squeezing. It aligns well with the task, allowing access from the side of the tube which is optimal for dispensing toothpaste.",
+      "Red": "The red grasp is positioned around the box, which is not useful for the task of brushing teeth. Grasping the box does not align with the task of using toothpaste."
+    },
+    "scene_description": "The scene consists of a tube of toothpaste labeled 'XXL' and a box labeled 'BASMATI' on a white table. The toothpaste is standing upright with the cap at the top and the tube extending downwards. The box is also upright and to the right of the toothpaste, with its wider sides facing forward and backward. The green grasp is positioned horizontally around the toothpaste tube, and the red grasp is positioned horizontally around the box.",
+    "task_evaluation": "To brush teeth, the toothpaste tube is the relevant object. The grasp should secure the middle to lower section of the tube for easy squeezing and access to the toothpaste. This area is accessible and aligned for a side grasp.",
+    "experiment_number": 14
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is aligned horizontally near the middle of the toothpaste tube. This position allows for a secure grip around the body of the tube, making it suitable for the task.",
+      "Red": "The Red grasp is positioned lower on the toothpaste tube and is at an angle, which might result in less control due to proximity to the base.",
+      "Blue": "The Blue grasp is oriented horizontally near the tube's top. This could provide a balanced grip for removing the cap, but it is slightly off-center, which might affect control.",
+      "Black": "The Black grasp is also in a horizontal position, slightly farther down the tube. This could provide a stable grip but is somewhat below the ideal location for grasping before removing the cap.",
+      "White": "The White grasp is positioned at the top of the box, which is irrelevant as the box is not needed to complete the task. Hence, it is unsuitable."
+    },
+    "scene_description": "The scene depicts two objects on a table. On the left is a standing toothpaste tube labeled 'Signal XXL,' oriented vertically with the cap at the top. On the right is a rectangular box labeled 'Basmatti,' oriented horizontally with its narrow side facing the viewer. The toothpaste tube is situated to the left and slightly in front of the box.",
+    "task_evaluation": "To fulfill the goal of brushing teeth, the toothpaste tube is the relevant object. For optimal access, the tube should be grasped around the body, preferably from the side, just below the cap to securely control the tube. This allows for easy removal of the cap and dispensing of the toothpaste.",
+    "experiment_number": 15
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp position is positioned to approach the toothpaste tube from the side, which aligns well with the task requirements. This allows an effective grip around the tube and leaves the cap unobstructed for opening."
+    },
+    "scene_description": "The scene consists of a white tabletop with two objects. On the left, there is a vertical tube of toothpaste, standing upright with the cap on top. On the right, there is a rectangular box, likely a cereal or rice box, also standing upright. The tube of toothpaste is closer to the center, while the box is further to the right.",
+    "task_evaluation": "The goal is to brush teeth, so the toothpaste tube is the relevant object. The most effective way to grasp the tube is by the middle or lower section, which is cylindrical and straightforward for gripping. The grasp should ideally come from the side, allowing the cap to remain accessible for opening.",
+    "experiment_number": 16
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned towards the side of the toothpaste tube. This position allows for a secure hold of the tube's body, maintaining stability and ease for removing the cap and squeezing the paste.",
+      "Red": "The Red grasp is oriented towards the top side of the Basmati box. Although secure, it is irrelevant for holding the toothpaste tube.",
+      "Blue": "The Blue grasp is positioned on the side of the Basmati box. This grasp is irrelevant for the toothpaste tube.",
+      "Black": "The Black grasp is positioned towards the cap end of the toothpaste tube but slightly lower. It could result in less stability when removing the cap or squeezing the paste.",
+      "White": "The White grasp is at the lower part of the toothpaste tube. While stable, it may not provide the best control when removing the cap or squeezing the paste."
+    },
+    "scene_description": "There are two objects visible on the table. On the left, there is a toothpaste tube standing upright with the cap at the top and the squeezed end at the bottom. The tube has a colorful design and text that includes 'XXL' at the top end. On the right, there is a box labeled 'Basmati', standing upright with its flat surfaces facing the front and back. The box is rectangular with crisp edges and might contain a lightweight dry product.",
+    "task_evaluation": "To fulfill the task of brushing teeth, the toothpaste tube is the relevant object. The suitable grasp would involve holding the tube midsection so that it's easy to remove the cap and squeeze the toothpaste out. The grasp should ideally approach the tube from the side for a steady hold.",
+    "experiment_number": 17
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned on the side of the toothpaste tube. It allows for a stable grip around the middle section, making it suitable for picking up the tube vertically.",
+      "Red": "The Red grasp is positioned on the pink box. Since the box is not the relevant object for brushing teeth, this grasp is unsuitable.",
+      "Blue": "The Blue grasp approaches the toothpaste tube from a higher angle, targeting the upper section. While it might work, it risks squeezing the tube and is less stable for a vertical lift.",
+      "Black": "The Black grasp is positioned lower on the toothpaste tube. It may not provide a balanced grip, especially if attempting to lift the tube vertically.",
+      "White": "The White grasp approaches from a mid-level on the toothpaste tube, similar to the Green grasp. It also provides a good grip on the sides and is suitable for a balanced lift."
+    },
+    "scene_description": "The scene consists of a white table with two objects. The first object on the left is a toothpaste tube, standing vertically with its cap on top. The label 'XXL' is visible on the upper section. The second object on the right is a pink rectangular box lying flat on the table with 'BASMATI' written on it. It is oriented horizontally with its larger face upwards.",
+    "task_evaluation": "To fulfill the task of brushing teeth, the toothpaste tube is the relevant object. The ideal part of the tube to grasp is the middle section to ensure stability during the pick-up, located on the sides of the tube.",
+    "experiment_number": 18
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Blue",
+    "reasoning": {
+      "Green": "The Green grasp is near the top of the toothpaste tube, close to the cap. This position is suitable as it allows control over the cap for opening and closing.",
+      "Red": "The Red grasp is on the rectangular box, which is irrelevant for the task of brushing teeth.",
+      "Blue": "The Blue grasp is also near the top of the toothpaste tube, providing a similar advantage as the Green grasp. It is positioned better for controlling the cap for usage.",
+      "Black": "There is no visible grasp position marked with Black in this scenario."
+    },
+    "scene_description": "The scene contains two objects on a white table. On the left is a toothpaste tube oriented vertically with the cap facing up. On the right is a rectangular box oriented vertically with text visible on the side. The toothpaste tube is positioned closer to the bottom left corner of the table while the rectangular box is closer to the center right. There are four grasp positions marked with different colors: Green and Blue on the toothpaste tube, and Red on the rectangular box.",
+    "task_evaluation": "The objective is to brush teeth, which requires using toothpaste. The relevant object for this task is the toothpaste tube. The toothpaste should be grasped from the top where the cap is located, as it allows access for opening the cap and squeezing out the toothpaste. Approaching from the top is suitable for grasping around the cap.",
+    "experiment_number": 19
+  },
+  {
+    "task": "I want to brush my teeth",
+    "best_grasp_position": "Green",
+    "reasoning": {
+      "Green": "The Green grasp is positioned on the side of the toothpaste tube. It aligns well with the vertical orientation and allows for a stable grip to squeeze the tube.",
+      "Red": "The Red grasp is associated with the box on the right, which is not relevant for the task of brushing teeth, as the box likely contains rice.",
+      "Blue": "The Blue grasp is also positioned on the side of the toothpaste tube. Like the Green grasp, it supports the proper orientation for squeezing the toothpaste. However, it is slightly higher on the tube, which could make it more difficult to control the squeezing motion effectively."
+    },
+    "scene_description": "The scene consists of a table with two objects on it. On the left, there is a toothpaste tube standing upright, with the cap on top indicating the top orientation of the tube. On the right, there is a rectangular box standing on its shorter edge. The box is oriented vertically with its top surface visible.",
+    "task_evaluation": "To fulfill the task of brushing your teeth, the toothpaste tube on the left is the object of interest. The appropriate grasp for the toothpaste would be around the middle section of the tube, as this area provides a stable grip for dispensing toothpaste. It should be grasped from the side.",
+    "experiment_number": 20
+  }
+]

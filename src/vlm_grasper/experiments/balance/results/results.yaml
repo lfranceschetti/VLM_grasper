@@ -1,0 +1,11 @@
+n_grasps_beginning: 10126
+n_grasps_surface_normal: 3178
+n_grasps_good_score: 57
+n_grasps_feasible: 29
+n_grasps_chosen: 5
+t_start: 1724884210.73932
+t_pc_processed: 1724884214.3462522
+t_edge_grasp_completed: 1724884212.0362494
+t_filtering_completed: 1724884225.830626
+t_rendering_completed: 1724884227.6952167
+t_end: 1724884233.7269814

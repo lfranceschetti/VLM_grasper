@@ -1,0 +1,266 @@
+[
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The Green grasp is angled towards the top part of the cone near the ice cream, providing a good grip on the cone without disturbing the ice cream too much. This position secures the ice cream reliably, although it is slightly higher than optimal.",
+            "Red": "The Red grasp is positioned in line with the middle section of the cone, which provides an ideal point to secure the cone. This grip avoids impacting the ice cream and offers the most stable base, optimizing balance while lifting.",
+            "Blue": "The Blue grasp is angled lower down towards the wide base of the cone. While it may seem like a stable position, it risks crushing the lower part of the cone, possibly compromising the structure."
+        },
+        "scene_description": "The scene depicts a single ice cream cone positioned upright on a table. It is centrally located with respect to the table edges. The ice cream cone consists of a waffle cone at the bottom and ice cream on top, featuring a decorative topping. The cone is oriented vertically with the tip facing downwards and the ice cream at the top.",
+        "task_evaluation": "The goal is to pick up the ice cream cone. The best approach would be to grip the cone section to ensure a secure hold without crushing the ice cream on top. Grasping should be from the side to encompass the cone, which is the most stable part.",
+        "experiment_number": 1
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The Green grasp is positioned at the top, near the scoop section of the ice cream. This area is less stable and more likely to result in the ice cream cone toppling or the scoop slipping off. It does not align well with securing the cone itself.",
+            "Red": "The Red grasp is positioned more towards the middle, aligning with the cone section. This is the most suitable grasp as it takes hold of the stable part of the ice cream, reducing the risk of it slipping or being squeezed too hard.",
+            "Blue": "The Blue grasp appears to also be targeting the upper part of the cone, like the Green grasp, but slightly lower. It is not positioned optimally on the lower cone and thus may not provide enough stability when lifting the object."
+        },
+        "scene_description": "The scene shows a single ice cream cone positioned upright on a table. The ice cream cone consists of a lower cone section and an upper scooped section, appearing to have a flat top orientation. The cone is positioned centrally on the table with no other objects nearby.",
+        "task_evaluation": "To fulfill the task of picking up the ice cream, the ideal grasp point would be around the middle of the cone section to ensure a secure hold. This section is located at the lower part of the ice cream, providing stability and minimizing the risk of the scoop detaching. A side approach would be best to grasp around the circumference of the cone.",
+        "experiment_number": 2
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned lower on the cone, which is ideal for stability and balance. It encircles the thicker part of the cone, providing a secure hold. This position is well-aligned with the task requirements.",
+            "Red": "The Red grasp is placed near the top of the ice cream cone, very close to the scoop. This could potentially crush or disturb the ice cream, making it less suitable for picking up the object delicately.",
+            "Blue": "The Blue grasp is located at the very top of the ice cream itself. This position is unsuitable as it would interfere with the ice cream scoop and could cause it to deform or spill."
+        },
+        "scene_description": "In the center of a plain, light-colored table, there is a single ice cream cone. The cone is upright with the ice cream on top and the cone part below. The ice cream scoop is decorated and appears to sit on top of a green knitted base. The table is mostly empty except for this ice cream cone.",
+        "task_evaluation": "The task is to pick up the ice cream, which involves grasping the object at a suitable point for stability and ease of lifting. The best area to grasp would be around the lower to middle section of the cone as it provides a balanced grip without disturbing the ice cream itself. Approaching from the side will likely offer the most stability.",
+        "experiment_number": 3
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned on the left side of the top portion of the ice cream cone. This positioning looks suitable for grasping the wider part of the cone, providing an adequate hold without interfering with the ice cream at the top.",
+            "Red": "The Red grasp is on the right side, similar to the Green grasp. This position is closer to the top of the ice cream peak, which might result in slippage or instability as the fingers may not close fully around the widest section of the cone.",
+            "Blue": "The Blue grasp is positioned slightly higher than the others, towards the upper right. This area is near the topmost portion, which is not ideal as it may grip around the ice cream itself rather than securely around the cone portion, leading to possible instability."
+        },
+        "scene_description": "The scene depicts a single object, an ice cream cone, positioned on a table. The ice cream cone has a conical shape with the larger end, the ice cream portion, facing upward. The cone's base is resting on the table surface. There are three distinct colored 'T' shaped grasp markers (Green, Red, Blue) positioned around the ice cream's top portion, which seems to be approximately centered on the table.",
+        "task_evaluation": "The objective is to pick up the ice cream. The most appropriate grasp point is around the top or middle of the cone, as grasping too close to the bottom may cause instability. Ideally, the gripper should close around the conical section, ensuring a secure hold. Approaching from the side or top angle seems plausible, depending on the grasp position.",
+        "experiment_number": 4
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned to the left side of the ice cream cone. This grasp is slightly angled and approaches the cone from a side angle. It is suitable for grasping the cone portion, which provides a stable grip point.",
+            "Red": "The Red grasp is positioned at the side of the cone around the middle section. While it aligns with the vertical portion of the cone, it doesn't seem as secure due to its position closer to the scoop.",
+            "Blue": "The Blue grasp is positioned to the right side and appears to be more aligned in the middle of the ice cream scoop, which may lead to instability or damaging the ice cream itself if pressure is applied."
+        },
+        "scene_description": "On a table, there is a single ice cream cone positioned upright in the center. It consists of a scoop of ice cream on top and a cone base at the bottom. The scoop is white with some toppings, and the cone is brown. The ice cream is oriented vertically with the scoop at the top and the cone at the bottom.",
+        "task_evaluation": "The goal is to pick up the ice cream. The optimal strategy would involve grasping the cone, as it provides a stable area for a secure hold. Grasping towards the lower end of the ice cream near the bottom of the cone is advisable.",
+        "experiment_number": 5
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned slightly above the base of the ice cream, which could provide a stable grip on the cone just below the ice cream. This allows for a secure grasp without disturbing the ice cream itself. Its alignment supports lifting the cone vertically.",
+            "Red": "The Red grasp is positioned at a similar height to the Green, slightly higher up near the ice cream. While it offers a chance to grasp just below the ice cream, the positioning might be slightly off-center, risking a less secure grip.",
+            "Blue": "The Blue grasp is too high up, targeting the ice cream itself. This could result in crushing or damaging the ice cream, making it unsuitable for the task."
+        },
+        "scene_description": "The scene consists of a single ice cream cone placed upright on a table. The ice cream is positioned centrally in the scene. The cone is topped with white ice cream and possibly sprinkles. The ice cream cone is oriented vertically, with the conical base touching the table and the ice cream at the top.",
+        "task_evaluation": "The task is to pick up the ice cream. The best way to grasp the ice cream cone is near the top, just below the ice cream, to ensure a stable grip without crushing the ice cream itself. This grasp would typically come from the side, slightly below the widest part of the ice cream at the top of the cone.",
+        "experiment_number": 6
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned on the left of the ice cream cone and approaches horizontally. This position aligns with the cone\u2019s structure and allows for a stable grip on the cone.",
+            "Red": "The Red grasp is positioned on the right of the ice cream cone, also approaching horizontally. This is a suitable option for grasping the cone as it provides alignment with the cone\u2019s shape.",
+            "Blue": "The Blue grasp is positioned above the ice cream itself, approaching vertically. This position risks compromising the ice cream swirl\u2019s integrity and is less preferable."
+        },
+        "scene_description": "In the center of the table, there is an ice cream cone positioned vertically. The cone base is touching the table and the ice cream is at the top. The ice cream has a swirl shape and is likely soft serve.",
+        "task_evaluation": "The object to be grasped is the ice cream cone. For effective grasping, it's best to target the cone section, as it provides a solid structure for handling the object. The most suitable approach is a side grasp around the cone base, which is located below the ice cream swirl.",
+        "experiment_number": 7
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp seems suitable as it approaches the cone from the side, aligning with the vertical orientation of the cone. This position may securely hold the middle of the cone without disturbing the ice cream top.",
+            "Red": "The Red grasp is positioned near the top of the cone, which may risk disturbing or squishing the ice cream portion. It is not ideal for maintaining the structural integrity of the ice cream.",
+            "Blue": "The Blue grasp attempts to approach from the side but seems slightly lower compared to the green. It could also be suitable but might not be as centered on the cone."
+        },
+        "scene_description": "The scene features a single ice cream cone placed upright at the center of a table. The cone bottom is visible, with the ice cream at the top, and it is oriented vertically. The cone's narrow base sits on the table, and the wider ice cream part is at the top.",
+        "task_evaluation": "The task is to pick up the ice cream cone. The most appropriate location for grasping is near the middle of the cone, where it can be securely held without squeezing the ice cream at the top or the base that rests on the table. Grasping should be done from the sides to maintain the balance of the object.",
+        "experiment_number": 8
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp approaches the cone from the side, which is ideal for securely holding the cone just below the scoop. This position ensures a strong grip on the cone while avoiding the softer ice cream scoop at the top.",
+            "Red": "The Red grasp approaches much closer to the scoop, which risks damaging the top portion of the ice cream. It's less suitable as it focuses on the ice cream itself rather than the cone.",
+            "Blue": "The Blue grasp also approaches from the side, similar to the Green grasp, and is well-positioned around the upper part of the cone. However, it is slightly lower than the Green grasp, which may be less optimal for stability."
+        },
+        "scene_description": "The scene contains a single ice cream cone positioned centrally on a table. The ice cream consists of a cone base with a scoop on top. The ice cream is oriented vertically, with the tip of the cone at the bottom and the scoop at the top. There are three potential grasp positions marked with colors (Green, Red, Blue) around the upper part of the cone just below the scoop.",
+        "task_evaluation": "The task is to pick up the ice cream. The most suitable area for grasping is just below the scoop at the top of the cone. This area provides a secure grip and avoids damaging the scoop. The grip should ideally approach from the side to secure the cone without impacting the delicate top.",
+        "experiment_number": 9
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned to approach the side of the cone just below the ice cream. This offers a stable grip on the cone and can prevent the ice cream from being toppled, making it suitable for picking up the ice cream.",
+            "Red": "The Red grasp is positioned to approach from the side but is lower down on the cone. This position may be less stable as it is closer to the narrow end, risking tipping the ice cream.",
+            "Blue": "The Blue grasp is positioned at the top ice cream portion and approaches horizontally. This is unsuitable, as it might crush the ice cream or cause it to tip."
+        },
+        "scene_description": "The scene depicts a single ice cream cone placed upright on a table. The cone's base is at the bottom, and the ice cream is at the top. The cone is centered on the table, with the tip of the cone pointing downward and the ice cream oriented upward.",
+        "task_evaluation": "The task is to pick up the ice cream. The best strategy would be to grasp the cone just below the ice cream, as this provides a solid grip point and can prevent damaging the ice cream itself. The grasp should ideally be from the side of the cone for stability.",
+        "experiment_number": 10
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp position approaches the cone from the left side at a slight angle, which aligns well with the task of grasping the mid-section of the cone. This approach secures the cone without putting pressure on the ice cream itself, making it a suitable option for lifting.",
+            "Red": "The Red grasp position approaches from the lower side of the cone, slightly below the optimal mid-section. While it still provides a reasonable grip, it may not secure the cone as effectively as the Green position, due to the imbalance and potential for slipping.",
+            "Blue": "The Blue grasp position approaches directly from above, targeting the ice cream portion. While this position could secure the ice cream, it risks applying too much pressure, potentially damaging the ice cream. Thus, it is less ideal for a secure and damage-free pickup."
+        },
+        "scene_description": "The scene features a table with a single ice cream cone positioned near the center. The ice cream is in an upright orientation; the cone is the base, and the ice cream itself is on top. The cone has a textured surface, and the ice cream portion protrudes slightly above the top of the cone, with chocolate pieces visible. The object is framed against a relatively plain surface, providing a clear view for grasping.",
+        "task_evaluation": "The task is to pick up the ice cream cone. To accomplish this, the grasp should ideally secure the cone portion to prevent damage to the ice cream atop. A side approach would be optimal, targeting the mid-section of the cone where it is sturdier. Grasping from the cone's side (left, right) ensures a stable lift.",
+        "experiment_number": 11
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Blue",
+        "reasoning": {
+            "Green": "The Green grasp position targets the upper part of the cone, near the ice cream. This can provide a secure hold due to the shape of the cone but risks making contact with the ice cream itself.",
+            "Red": "The Red grasp is positioned at the top part of the cone, just below the ice cream. This grasp might be too close to the ice cream, increasing the chance of damaging it or toppling the ice cream off the cone.",
+            "Blue": "The Blue grasp position approaches from the side and seems to target the middle of the cone, allowing a secure grip without risking the integrity of the ice cream. This approach is more aligned with the cylindrical shape of the cone."
+        },
+        "scene_description": "The scene shows an ice cream cone placed upright on a table. The ice cream consists of a cone with ice cream on top, featuring a swirl and some decorative elements. The cone is cylindrical and tapers slightly towards the bottom, allowing it to stand upright. The ice cream is positioned centrally on the table.",
+        "task_evaluation": "The task is to pick up the ice cream. The most secure approach would be to grasp around the midway point of the cone, allowing for stability and ensuring the ice cream stays intact. The cone's mid-section is suitable for a secure grip.",
+        "experiment_number": 12
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The Green grasp approaches from the left side of the ice cream's top. While it may hold onto the larger top portion, it risks disrupting the ice cream itself, which may be undesirable.",
+            "Red": "The Red grasp is positioned on the right side, close to the middle of the cone. This grasp aligns well with picking up the cone without disturbing the ice cream on top, making it a suitable choice.",
+            "Blue": "The Blue grasp approaches from the back, near the top of the ice cream. Although it provides a firm hold on the broadest part of the cone, it similarly may disturb the ice cream."
+        },
+        "scene_description": "The scene depicts a single object, which is an ice cream cone, placed vertically in the center of the table. The ice cream portion is at the top, with the cone facing downwards, making the cone shape the lower part in contact with the surface. The ice cream is topped with what appears to be chocolate drizzle and a wafer stick.",
+        "task_evaluation": "To pick up the ice cream, the best grasp could be near the middle of the cone, allowing for a secure hold without disturbing the top portion of the ice cream. Given its vertical orientation, approaching from the side is suitable, with the fingers of the gripper closing around the midsection of the cone.",
+        "experiment_number": 13
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned horizontally, aligning with the cone section. It seems to allow a secure grip around the cone right below the scoop, which is ideal for maintaining stability during the lift.",
+            "Red": "The Red grasp is located directly on the cone as well, but its angle might be less optimal compared to the Green as it's slightly lower. Gripping too low on the cone might risk tilting the ice cream.",
+            "Blue": "The Blue grasp is positioned at the top, more aligned with the ice cream scoop than the cone. This position might not provide the same stability since the ice cream could be squished or fall off."
+        },
+        "scene_description": "The scene shows a single ice cream cone standing upright on a table. The cone is topped with a scoop of ice cream and possibly some wrapping at the base of the ice cream. The cone is centered on the table and is oriented vertically.",
+        "task_evaluation": "The task is to pick up the ice cream. The most stable part to grasp is the cone itself, just below the ice cream scoop, ideally near the top of the cone. This part provides enough surface area for a stable grasp and allows the ice cream to remain upright during the lift. Approaching the cone from the side slightly below the ice cream is preferable.",
+        "experiment_number": 14
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The Green grasp is positioned at the top of the cone. This position may risk damaging the ice cream topping as it requires approaching from above and could compress the ice cream if not applied carefully.",
+            "Red": "The Red grasp is positioned around the midsection of the cone. This position offers a balanced hold and allows for a side grip, which is less likely to disturb the top ice cream. It also provides a stable center of gravity for the cone.",
+            "Blue": "The Blue grasp is positioned near the base of the cone. While it provides a sturdy hold, it requires a lower approach, which might be less stable for lifting the entire object without tilting."
+        },
+        "scene_description": "The scene shows a single ice cream cone placed upright on a table. The cone has a waffle texture and is topped with ice cream that appears swirled and extends outward slightly. The ice cream is oriented vertically with the base of the cone at the bottom and the top of the ice cream at the top.",
+        "task_evaluation": "The task is to pick up the ice cream, which means the grip should ideally encompass the cone without disturbing the ice cream on top. The cone, which is the most suitable area to grasp, is located at the bottom of the object. A side approach would be effective to avoid disrupting the ice cream topping.",
+        "experiment_number": 15
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The Green grasp approaches from the top-left side of the ice cream, aligning more with the ice cream rather than the cone. This position may risk damaging the ice cream and lacks a stable grip on the cone.",
+            "Red": "The Red grasp approaches from the front-right, more aligned with the cone. This position offers a reasonable approach to grip around the cone for stability.",
+            "Blue": "The Blue grasp comes from the top-right side, similar to Green, and primarily targets the ice cream section. This can be unstable and may damage the ice cream."
+        },
+        "scene_description": "The scene shows a single ice cream cone positioned upright in the center of a white table. The ice cream is at the top, with a waffle cone base. The orientation is vertical, with the cone at the bottom and ice cream at the top.",
+        "task_evaluation": "To fulfill the task of picking up the ice cream, the best approach would be to grasp it from the cone section. This provides a stable grip and minimizes contact with the ice cream itself. The grasp should ideally come from the side of the cone.",
+        "experiment_number": 16
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Red",
+        "reasoning": {
+            "Green": "The Green grasp is positioned near the top of the ice cream cone, aligning well with the cone's vertical orientation. This may risk touching the scoop but offers a stable side approach around the wider upper part of the cone.",
+            "Red": "The Red grasp is positioned slightly lower towards the middle of the cone. This position avoids the scoop entirely and allows for a stable grip, making it a good candidate for securely lifting the ice cream.",
+            "Blue": "The Blue grasp is located near the bottom of the cone and focuses on the base section. This position provides good stability for lifting but may not provide the most balanced grasp considering the top-heavy nature of the object."
+        },
+        "scene_description": "The scene features a single ice cream cone placed on a table. The ice cream is upright with the cone at the bottom and the scoop on top. The object is centrally located on the table, and there are three colored 'T' shaped markings representing potential grasp locations: Green, Red, and Blue. Each 'T' indicates the direction and area where the gripper would close around the object.",
+        "task_evaluation": "The goal is to pick up the ice cream. The ice cream should ideally be grasped from the cone area to avoid damaging the scoop on top. A side approach around the cone is preferable to ensure a solid grip without disturbing the top scoop.",
+        "experiment_number": 17
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned to approach from the side of the ice cream cone, aligning with the cone's center. This approach is well-suited for a secure grip around the base, reducing the risk of tipping.",
+            "Red": "The Red grasp approaches the ice cream cone from the side as well, but is slightly higher up compared to the Green grasp. Grasping too high might lead to instability due to the higher center of gravity.",
+            "Blue": "The Blue grasp comes from above the ice cream scoop. While this may initially seem feasible, grasping the ice cream directly could cause it to squish or fall off, leading to a messy situation and a less secure hold."
+        },
+        "scene_description": "The scene consists of a table with a single ice cream cone positioned upright at the center. The ice cream is in a typical cone shape with the narrow end (cone's tip) pointing downwards. The cone is wrapped in a brown holder, and the ice cream scoop is on top. No other objects are present on the table.",
+        "task_evaluation": "To fulfill the task of picking up the ice cream, gripping the cone itself is ideal as it provides the most secure hold. The base of the cone, where it widens, can be held from the side to stabilize the grasp. Approaching from the side is recommended for a stable pickup.",
+        "experiment_number": 18
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Blue",
+        "reasoning": {
+            "Green": "The Green grasp is positioned diagonally and its approach seems to align well with the side of the upper cone. This could provide a secure grip on the cone area, but the angle may make it slightly off-center.",
+            "Red": "The Red grasp is parallel to the top of the ice cream, which may not provide a secure grip as it's grasping the soft and wide part of the ice cream, potentially risking damage.",
+            "Blue": "The Blue grasp is positioned horizontally and aligns with the side of the upper cone. This position seems optimal as it targets a stable section of the cone without risking damage to the ice cream top."
+        },
+        "scene_description": "The scene shows a single ice cream cone placed near the center of a table. The ice cream cone consists of a cone at the bottom and ice cream with toppings at the top. The cone is upright, with the point at the bottom and the ice cream part at the top.",
+        "task_evaluation": "The task is to pick up the ice cream cone. The appropriate strategy for grasping the ice cream cone would likely involve gripping around the cone close to where it meets the ice cream. This is a stable area to hold the object, typically the sides of the upper cone, to avoid instability.",
+        "experiment_number": 19
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp approaches the cone laterally. This position allows for a secure hold around the main body of the cone, making it ideal for lifting without risking tipping the ice cream.",
+            "Red": "The Red grasp is angled somewhat unfavorably, intersecting with the cone near the top. It risks pushing the top of the ice cream and lacks stability for holding the full weight from this angle.",
+            "Blue": "The Blue grasp approaches from above, targeting the top. While it could potentially hold the ice cream, it may not provide a stable grip on the conical base, increasing the risk of slipping."
+        },
+        "scene_description": "The scene depicts a single ice cream cone positioned on a table. The ice cream cone is upright with the pointed end resting on the table. The scooped ice cream is on top, while the cone forms the base. The object is located near the center of the table.",
+        "task_evaluation": "The goal is to pick up the ice cream. Given the upright orientation of the cone, the most effective grasp would likely target the cone portion from either side to ensure stability and prevent the top-heavy ice cream from tipping.",
+        "experiment_number": 20
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned around the middle of the cone, providing a stable point for grasping. It allows for a side approach, which is ideal for securely holding the ice cream without disturbing the top swirl.",
+            "Red": "The Red grasp is located near the top where the ice cream meets the cone. While still possible, it's less stable than the middle because it might risk tilting the ice cream off balance.",
+            "Blue": "The Blue grasp is positioned at the top of the ice cream swirl. This is unsuitable as it could lead to crushing the top portion of the ice cream, making it the least favorable option."
+        },
+        "scene_description": "The scene depicts a single ice cream cone located at approximately the center of a table. The ice cream cone consists of a waffle cone base and a swirl of ice cream on top. The cone is in a vertical orientation with the pointed part of the cone on the bottom and the ice cream swirl facing upwards. There are three potential grasp positions marked with different colors around the ice cream.",
+        "task_evaluation": "The task is to pick up the ice cream. Given its vertical orientation, a grasp around the cone part at the middle or slightly lower position would be favorable. This avoids contact with the top ice cream swirl, which is delicate. The grasp should ideally be from the side to securely hold the cone.",
+        "experiment_number": 21
+    },
+    {
+        "task": "Pick up the ice cream",
+        "best_grasp_position": "Green",
+        "reasoning": {
+            "Green": "The Green grasp is positioned on the upper side of the ice cream cone, close to the scoop. This is a suitable area to grasp, providing a stable hold just underneath the ice cream. The approach aligns well with the task, as it targets the area right below the scoop.",
+            "Red": "The Red grasp is placed slightly lower on the cone compared to the Green grasp. While it can still achieve stability, it is further from the preferred gripping area and may risk a less secure hold.",
+            "Blue": "The Blue grasp is positioned on the upper side, similar to Green but seems to come from a different angle. It closely aligns with the task but might be slightly less optimal given its angle, potentially requiring more adjustments."
+        },
+        "scene_description": "The scene contains a single ice cream cone positioned upright in the center of the table. The ice cream has a conical base with a rounded top representing the ice cream scoop. The cone is oriented vertically with the pointed end at the bottom and the ice cream scoop at the top.",
+        "task_evaluation": "To pick up the ice cream, it would be ideal to grasp the cone itself just below the scoop, where the structure is most stable. This area is located at the top part of the cone, just under the ice cream. Given the object's vertical orientation, an approach from the side would be most effective.",
+        "experiment_number": 22
+    }
+]

@@ -1,0 +1,8 @@
+scene: obstruction
+number_of_objects: 2
+voxel_downsampling: 0.0065
+max_distance_points: 1.0
+number_of_grasps: 5
+score_threshold: 0.5
+tasks:
+  - "I want to brush my teeth"
